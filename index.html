@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Konforme automatically scans your cloud and on-premise infrastructure and maps every finding to NIS2 Article 21 — giving you an audit-ready compliance report in minutes." />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph (for link previews on LinkedIn, WhatsApp, etc.) -->
+  <meta property="og:title" content="Konforme — NIS2 Compliance Automation for EU Companies" />
+  <meta property="og:description" content="Know exactly where your company stands on NIS2. Automated cloud scanning, Article 21 mapping, audit-ready reports." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://konforme.io" />
+
+  <title>Konforme — NIS2 Compliance Automation for EU Companies</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════ -->
+  <nav class="nav" id="nav">
+    <a href="#" class="nav__logo">
+      <div class="nav__logo-mark">
+        <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M18 2L4 8V18C4 25.4 10.2 31.8 18 34C25.8 31.8 32 25.4 32 18V8L18 2Z" fill="#0B1F3A" stroke="#00C2D4" stroke-width="1.5"/>
+          <path d="M12 11V25M12 18L20 11M12 18L21 25" stroke="#00C2D4" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <span class="nav__logo-name">Konform<em>e</em></span>
+    </a>
+
+    <ul class="nav__links" role="list">
+      <li><a href="#why">Why NIS2</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#how">How it works</a></li>
+      <li><a href="#waitlist" class="nav__cta">Join Waitlist</a></li>
+    </ul>
+  </nav>
+
+  <!-- ═══════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero__content">
+      <div class="hero__badge" aria-label="Status: NIS2 Directive now in force">
+        <span class="hero__badge-dot" aria-hidden="true"></span>
+        NIS2 Directive — Now in force across the EU
+      </div>
+
+      <h1 class="hero__title">
+        Know exactly where<br/>
+        your company stands<br/>
+        on <em>NIS2 compliance</em>
+      </h1>
+
+      <p class="hero__subtitle">
+        Konforme automatically scans your cloud and on-premise infrastructure,
+        maps every finding to NIS2 Article 21, and gives you a clear,
+        audit-ready compliance report — in minutes.
+      </p>
+
+      <form class="waitlist-form" id="hero-form" novalidate>
+        <input
+          type="email"
+          id="hero-email"
+          class="waitlist-form__input"
+          placeholder="your@company.eu"
+          autocomplete="email"
+          aria-label="Work email address"
+          required
+        />
+        <button type="submit" class="waitlist-form__btn">Get Early Access</button>
+      </form>
+      <p class="waitlist-form__success" id="hero-success" role="status" aria-live="polite"></p>
+      <p class="waitlist-form__note">No credit card required &nbsp;·&nbsp; EU-hosted &nbsp;·&nbsp; GDPR compliant</p>
+
+      <div class="hero__stats" aria-label="Key statistics">
+        <div class="hero__stat">
+          <span class="hero__stat-value">18+</span>
+          <span class="hero__stat-label">EU Sectors Covered</span>
+        </div>
+        <div class="hero__stat-divider" aria-hidden="true"></div>
+        <div class="hero__stat">
+          <span class="hero__stat-value">Art.21</span>
+          <span class="hero__stat-label">Full NIS2 Mapping</span>
+        </div>
+        <div class="hero__stat-divider" aria-hidden="true"></div>
+        <div class="hero__stat">
+          <span class="hero__stat-value">&lt;15min</span>
+          <span class="hero__stat-label">First Scan to Report</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__scroll-hint" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="hero__scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       WHY SECTION
+  ═══════════════════════════════════════ -->
+  <section class="why section" id="why">
+    <div class="container">
+      <span class="section__label">The Problem</span>
+      <h2 class="section__title">NIS2 is not optional.<br/>Most companies aren't ready.</h2>
+      <p class="section__subtitle">Fines reach €10M or 2% of global turnover. Manual audits take weeks. Konforme makes compliance visible and continuous.</p>
+
+      <div class="why__grid">
+
+        <!-- Scanner mockup -->
+        <div class="why__visual" aria-hidden="true">
+          <div class="compliance-card compliance-card--fail">
+            <div class="compliance-card__icon">⚠</div>
+            <div class="compliance-card__text">
+              <p class="compliance-card__title">MFA not enforced on admin accounts</p>
+              <p class="compliance-card__article">NIS2 Art. 21 — Access Control</p>
+            </div>
+            <span class="compliance-card__status compliance-card__status--fail">Failed</span>
+          </div>
+          <div class="compliance-card compliance-card--pass">
+            <div class="compliance-card__icon">✓</div>
+            <div class="compliance-card__text">
+              <p class="compliance-card__title">Encryption at rest enabled (AES-256)</p>
+              <p class="compliance-card__article">NIS2 Art. 21 — Cryptography</p>
+            </div>
+            <span class="compliance-card__status compliance-card__status--pass">Passed</span>
+          </div>
+          <div class="compliance-card compliance-card--warn">
+            <div class="compliance-card__icon">~</div>
+            <div class="compliance-card__text">
+              <p class="compliance-card__title">Audit logs retained for 45 days only</p>
+              <p class="compliance-card__article">NIS2 Art. 21 — Logging & Monitoring</p>
+            </div>
+            <span class="compliance-card__status compliance-card__status--warn">Review</span>
+          </div>
+          <div class="compliance-card compliance-card--pass">
+            <div class="compliance-card__icon">✓</div>
+            <div class="compliance-card__text">
+              <p class="compliance-card__title">Vulnerability patches within SLA</p>
+              <p class="compliance-card__article">NIS2 Art. 21 — Patch Management</p>
+            </div>
+            <span class="compliance-card__status compliance-card__status--pass">Passed</span>
+          </div>
+        </div>
+
+        <!-- Points -->
+        <div class="why__points">
+          <div class="why__point">
+            <div class="why__point-number" aria-hidden="true">1</div>
+            <div>
+              <h3 class="why__point-title">NIS2 is now law in all EU member states</h3>
+              <p class="why__point-body">Every medium and large company in energy, health, transport, digital services, and 14 other sectors must comply — or face significant regulatory penalties.</p>
+            </div>
+          </div>
+          <div class="why__point">
+            <div class="why__point-number" aria-hidden="true">2</div>
+            <div>
+              <h3 class="why__point-title">Manual compliance is slow and expensive</h3>
+              <p class="why__point-body">Traditional gap assessments take weeks of consultant time and cost tens of thousands of euros — only to give you a snapshot that's outdated within months.</p>
+            </div>
+          </div>
+          <div class="why__point">
+            <div class="why__point-number" aria-hidden="true">3</div>
+            <div>
+              <h3 class="why__point-title">Konforme gives you continuous visibility</h3>
+              <p class="why__point-body">Connect your cloud accounts in minutes, get your compliance score instantly, and track remediation over time with audit-ready evidence always at hand.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       FEATURES
+  ═══════════════════════════════════════ -->
+  <section class="features section section--dark" id="features">
+    <div class="container">
+      <span class="section__label">Product</span>
+      <h2 class="section__title">Built specifically for EU companies</h2>
+      <p class="section__subtitle">Not a US compliance tool rebranded. Konforme is built from the ground up around NIS2 and EU regulatory requirements.</p>
+
+      <div class="features__grid">
+        <article class="feature-card">
+          <div class="feature-card__icon" aria-hidden="true">☁</div>
+          <h3 class="feature-card__title">Multi-Cloud Scanning</h3>
+          <p class="feature-card__body">Connect AWS, Azure, and Google Cloud via read-only roles. Scan configurations across all environments and get unified NIS2 scores.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-card__icon" aria-hidden="true">🔍</div>
+          <h3 class="feature-card__title">NIS2 Article 21 Mapping</h3>
+          <p class="feature-card__body">Every finding is mapped to the exact NIS2 article and clause — so you speak the same language as your national authority and your auditors.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-card__icon" aria-hidden="true">📄</div>
+          <h3 class="feature-card__title">Audit-Ready Reports</h3>
+          <p class="feature-card__body">Generate professional PDF compliance reports with evidence, risk scores, and remediation guidance — ready to submit to regulators or insurers.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-card__icon" aria-hidden="true">⚡</div>
+          <h3 class="feature-card__title">Continuous Monitoring</h3>
+          <p class="feature-card__body">Scheduled daily scans detect drift from compliant baselines and alert your team before small misconfigurations become reportable incidents.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-card__icon" aria-hidden="true">🏢</div>
+          <h3 class="feature-card__title">On-Premise Coverage</h3>
+          <p class="feature-card__body">Deploy our lightweight agent inside your network to scan on-premise servers, Active Directory, and network devices — no data leaves your perimeter.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-card__icon" aria-hidden="true">🌍</div>
+          <h3 class="feature-card__title">EU-Hosted & GDPR Native</h3>
+          <p class="feature-card__body">All data processed and stored in EU data centers. No transfer to third countries. Privacy by design from day one — not bolted on after the fact.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       HOW IT WORKS
+  ═══════════════════════════════════════ -->
+  <section class="how section" id="how">
+    <div class="container">
+      <span class="section__label">Process</span>
+      <h2 class="section__title">From connection to compliance report<br/>in under 15 minutes</h2>
+      <p class="section__subtitle">No agents to install for cloud scanning. No complex setup. Just connect, scan, and understand your NIS2 posture.</p>
+
+      <ol class="how__steps" role="list">
+        <li class="how__step">
+          <div class="how__step-num" aria-hidden="true">1</div>
+          <h3 class="how__step-title">Connect Your Cloud</h3>
+          <p class="how__step-body">Grant Konforme read-only access to your AWS, Azure, or GCP environment using a guided setup wizard. No credentials stored.</p>
+        </li>
+        <li class="how__step">
+          <div class="how__step-num" aria-hidden="true">2</div>
+          <h3 class="how__step-title">We Scan & Analyse</h3>
+          <p class="how__step-body">Konforme pulls configuration data from your infrastructure and runs it against 100+ NIS2-mapped compliance checks.</p>
+        </li>
+        <li class="how__step">
+          <div class="how__step-num" aria-hidden="true">3</div>
+          <h3 class="how__step-title">Get Your Score</h3>
+          <p class="how__step-body">See your overall NIS2 compliance score, broken down by Article 21 domain, with every finding explained in plain language.</p>
+        </li>
+        <li class="how__step">
+          <div class="how__step-num" aria-hidden="true">4</div>
+          <h3 class="how__step-title">Track & Remediate</h3>
+          <p class="how__step-body">Follow prioritised remediation steps, track progress over time, and generate reports for auditors, management, or cyber insurers.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       NIS2 COVERAGE
+  ═══════════════════════════════════════ -->
+  <section class="coverage section section--dark" id="coverage">
+    <div class="container">
+      <span class="section__label">Coverage</span>
+      <h2 class="section__title">Full NIS2 Article 21 coverage</h2>
+      <p class="section__subtitle">Every security measure mandated by NIS2 is covered. Nothing is left to manual interpretation.</p>
+
+      <ul class="coverage__grid" role="list">
+        <li class="coverage__item">
+          <span class="coverage__check" aria-hidden="true">✓</span>
+          <div>
+            <p class="coverage__text">Risk analysis & information system security policies</p>
+            <p class="coverage__article">Art. 21(2)(a)</p>
+          </div>
+        </li>
+        <li class="coverage__item">
+          <span class="coverage__check" aria-hidden="true">✓</span>
+          <div>
+            <p class="coverage__text">Incident handling & business continuity</p>
+            <p class="coverage__article">Art. 21(2)(b)(c)</p>
+          </div>
+        </li>
+        <li class="coverage__item">
+          <span class="coverage__check" aria-hidden="true">✓</span>
+          <div>
+            <p class="coverage__text">Supply chain security & third-party controls</p>
+            <p class="coverage__article">Art. 21(2)(d)</p>
+          </div>
+        </li>
+        <li class="coverage__item">
+          <span class="coverage__check" aria-hidden="true">✓</span>
+          <div>
+            <p class="coverage__text">Network & information system acquisition, development</p>
+            <p class="coverage__article">Art. 21(2)(e)</p>
+          </div>
+        </li>
+        <li class="coverage__item">
+          <span class="coverage__check" aria-hidden="true">✓</span>
+          <div>
+            <p class="coverage__text">Cybersecurity hygiene practices & training</p>
+            <p class="coverage__article">Art. 21(2)(g)</p>
+          </div>
+        </li>
+        <li class="coverage__item">
+          <span class="coverage__check" aria-hidden="true">✓</span>
+          <div>
+            <p class="coverage__text">Cryptography & encryption policies</p>
+            <p class="coverage__article">Art. 21(2)(h)</p>
+          </div>
+        </li>
+        <li class="coverage__item">
+          <span class="coverage__check" aria-hidden="true">✓</span>
+          <div>
+            <p class="coverage__text">Access control, identity & privileged access management</p>
+            <p class="coverage__article">Art. 21(2)(i)</p>
+          </div>
+        </li>
+        <li class="coverage__item">
+          <span class="coverage__check" aria-hidden="true">✓</span>
+          <div>
+            <p class="coverage__text">Multi-factor authentication & secure communications</p>
+            <p class="coverage__article">Art. 21(2)(j)</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       FINAL CTA
+  ═══════════════════════════════════════ -->
+  <section class="cta section" id="waitlist">
+    <div class="container">
+      <div class="cta__box">
+        <h2 class="section__title">Be among the first EU companies<br/>to achieve continuous NIS2 compliance</h2>
+        <p class="section__subtitle cta__subtitle">Konforme is in early access. Join the waitlist and get priority onboarding, founding customer pricing, and direct input into the product roadmap.</p>
+
+        <form class="waitlist-form" id="cta-form" novalidate>
+          <input
+            type="email"
+            id="cta-email"
+            class="waitlist-form__input"
+            placeholder="your@company.eu"
+            autocomplete="email"
+            aria-label="Work email address"
+            required
+          />
+          <button type="submit" class="waitlist-form__btn">Join the Waitlist</button>
+        </form>
+        <p class="waitlist-form__success" id="cta-success" role="status" aria-live="polite"></p>
+        <p class="waitlist-form__note">Free early access &nbsp;·&nbsp; No spam &nbsp;·&nbsp; Unsubscribe anytime</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer__logo">Konform<em>e</em></div>
+    <p class="footer__note">© 2025 Konforme Lda. &nbsp;·&nbsp; Porto, Portugal &nbsp;·&nbsp; EU-based &amp; GDPR compliant</p>
+    <nav class="footer__links" aria-label="Footer navigation">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Contact</a>
+      <a href="mailto:hello@konforme.io">hello@konforme.io</a>
+    </nav>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
