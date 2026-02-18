@@ -68,10 +68,12 @@
         audit-ready compliance report — in minutes.
       </p>
 
-      <form class="waitlist-form" id="hero-form" novalidate>
+      <form class="waitlist-form" id="hero-form" name="waitlist" method="POST" data-netlify="true" novalidate>
+        <input type="hidden" name="form-name" value="waitlist" />
         <input
           type="email"
           id="hero-email"
+          name="email"
           class="waitlist-form__input"
           placeholder="your@company.eu"
           autocomplete="email"
@@ -340,10 +342,12 @@
         <h2 class="section__title">Be among the first EU companies<br/>to achieve continuous NIS2 compliance</h2>
         <p class="section__subtitle cta__subtitle">Konforme is in early access. Join the waitlist and get priority onboarding, founding customer pricing, and direct input into the product roadmap.</p>
 
-        <form class="waitlist-form" id="cta-form" novalidate>
+        <form class="waitlist-form" id="cta-form" name="waitlist" method="POST" data-netlify="true" novalidate>
+          <input type="hidden" name="form-name" value="waitlist" />
           <input
             type="email"
             id="cta-email"
+            name="email"
             class="waitlist-form__input"
             placeholder="your@company.eu"
             autocomplete="email"
