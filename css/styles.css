@@ -1356,15 +1356,49 @@ input {
   text-align: center;
 }
 
-.cta__box .waitlist-form {
+.cta__action {
   position: relative;
-  z-index: 1;
+  z-index: 2;
+  text-align: center;
 }
 
-.cta__box .waitlist-form__note {
+.cta__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--gradient-cyan);
+  color: var(--color-navy);
+  border-radius: var(--radius-sm);
+  padding: 16px 32px;
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform var(--transition-fast), box-shadow var(--transition-base);
+  box-shadow: 0 4px 20px rgba(0, 194, 212, 0.3);
+}
+
+.cta__btn svg {
+  transition: transform var(--transition-fast);
+}
+
+.cta__btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(0, 194, 212, 0.45);
+}
+
+.cta__btn:hover svg {
+  transform: translateX(3px);
+}
+
+.cta__note {
   position: relative;
-  z-index: 1;
+  z-index: 2;
+  margin-top: 14px;
+  font-size: 12px;
   color: rgba(255, 255, 255, 0.2);
+  text-align: center;
+  letter-spacing: 0.3px;
 }
 
 
