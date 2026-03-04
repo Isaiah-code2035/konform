@@ -4,7 +4,9 @@
  * Modules:
  *   1. Waitlist Form Handler
  *   2. Scroll Reveal (Intersection Observer)
- *   3. Sticky Nav Shadow on Scroll
+ *   3. Sticky Nav with class toggle
+ *   4. Mobile Navigation Toggle
+ *   5. Smooth scroll for anchor links
  */
 
 'use strict';
@@ -13,7 +15,7 @@
    CONFIG
 ───────────────────────────────────────── */
 const CONFIG = {
-  SUCCESS_MESSAGE: '✓ You\'re on the list. We\'ll be in touch soon.',
+  SUCCESS_MESSAGE: 'You\'re on the list. We\'ll be in touch soon.',
   ERROR_MESSAGE:   'Something went wrong. Please try again or email hello@konforme.io',
 };
 
@@ -22,46 +24,25 @@ const CONFIG = {
    1. WAITLIST FORM HANDLER
 ───────────────────────────────────────── */
 
-/**
- * Validates a basic email format.
- * @param {string} email
- * @returns {boolean}
- */
 function isValidEmail(email) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
 
-/**
- * Shows the success message and hides the form.
- * @param {HTMLElement} form
- * @param {HTMLElement} successEl
- */
 function showSuccess(form, successEl) {
   form.style.display = 'none';
   successEl.textContent = CONFIG.SUCCESS_MESSAGE;
   successEl.classList.add('waitlist-form__success--visible');
 }
 
-/**
- * Shows an inline error on the email input.
- * @param {HTMLInputElement} input
- */
 function showInputError(input) {
   input.classList.add('waitlist-form__input--error');
   input.focus();
 
-  // Clear error styling on next input
   input.addEventListener('input', () => {
     input.classList.remove('waitlist-form__input--error');
   }, { once: true });
 }
 
-/**
- * Submits the email to Netlify Forms.
- * @param {string} email
- * @param {string} formName — matches the form's name attribute
- * @returns {Promise<boolean>} success
- */
 async function submitEmail(email, formName) {
   try {
     const body = new URLSearchParams({
@@ -82,43 +63,38 @@ async function submitEmail(email, formName) {
   }
 }
 
-/**
- * Handles form submission for a given form element.
- * @param {HTMLFormElement} form
- */
 async function handleFormSubmit(form) {
   const input   = form.querySelector('.waitlist-form__input');
   const button  = form.querySelector('.waitlist-form__btn');
-  const success = form.nextElementSibling; // .waitlist-form__success
+  const success = form.nextElementSibling;
 
   if (!input || !button || !success) return;
 
   const email = input.value.trim();
 
-  // Validate
   if (!isValidEmail(email)) {
     showInputError(input);
     return;
   }
 
-  // Loading state
-  button.textContent = 'Submitting…';
+  const originalHTML = button.innerHTML;
+  button.innerHTML = '<span>Submitting...</span>';
   button.disabled = true;
+  button.style.opacity = '0.7';
 
   const ok = await submitEmail(email, form.getAttribute('name'));
 
   if (ok) {
     showSuccess(form, success);
   } else {
-    button.textContent = 'Try Again';
+    button.innerHTML = originalHTML;
+    button.querySelector('span').textContent = 'Try Again';
     button.disabled = false;
+    button.style.opacity = '1';
     alert(CONFIG.ERROR_MESSAGE);
   }
 }
 
-/**
- * Attaches submit listeners to all waitlist forms on the page.
- */
 function initWaitlistForms() {
   const forms = document.querySelectorAll('.waitlist-form');
 
@@ -133,22 +109,16 @@ function initWaitlistForms() {
 
 /* ─────────────────────────────────────────
    2. SCROLL REVEAL
-   Adds .is-visible to elements with .reveal
-   as they enter the viewport.
+   IntersectionObserver with staggered animations
 ───────────────────────────────────────── */
 
-/**
- * Sets up an IntersectionObserver to animate
- * elements into view as the user scrolls.
- */
 function initScrollReveal() {
   const revealElements = document.querySelectorAll(
-    '.feature-card, .coverage__item, .how__step, .why__point'
+    '.feature-card, .coverage__item, .how__step, .why__point, .compliance-card'
   );
 
   if (!revealElements.length) return;
 
-  // Add reveal class to all targets
   revealElements.forEach((el) => el.classList.add('reveal'));
 
   const observer = new IntersectionObserver(
@@ -156,13 +126,13 @@ function initScrollReveal() {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add('is-visible');
-          observer.unobserve(entry.target); // Animate once only
+          observer.unobserve(entry.target);
         }
       });
     },
     {
       threshold: 0.1,
-      rootMargin: '0px 0px -40px 0px',
+      rootMargin: '0px 0px -60px 0px',
     }
   );
 
@@ -171,26 +141,83 @@ function initScrollReveal() {
 
 
 /* ─────────────────────────────────────────
-   3. STICKY NAV — add shadow on scroll
+   3. STICKY NAV — toggle class on scroll
 ───────────────────────────────────────── */
 
-/**
- * Adds a subtle shadow to the nav when the
- * user scrolls past the top of the page.
- */
 function initStickyNav() {
   const nav = document.getElementById('nav');
   if (!nav) return;
 
   const onScroll = () => {
-    if (window.scrollY > 10) {
-      nav.style.boxShadow = '0 4px 24px rgba(0,0,0,0.3)';
+    if (window.scrollY > 20) {
+      nav.classList.add('nav--scrolled');
     } else {
-      nav.style.boxShadow = 'none';
+      nav.classList.remove('nav--scrolled');
     }
   };
 
   window.addEventListener('scroll', onScroll, { passive: true });
+}
+
+
+/* ─────────────────────────────────────────
+   4. MOBILE NAVIGATION TOGGLE
+───────────────────────────────────────── */
+
+function initMobileNav() {
+  const toggle = document.getElementById('nav-toggle');
+  const links  = document.getElementById('nav-links');
+  if (!toggle || !links) return;
+
+  toggle.addEventListener('click', () => {
+    const isOpen = links.classList.toggle('nav__links--open');
+    toggle.classList.toggle('nav__hamburger--active');
+    toggle.setAttribute('aria-expanded', isOpen);
+
+    // Prevent body scroll when menu is open
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+  });
+
+  // Close menu when a link is clicked
+  links.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      links.classList.remove('nav__links--open');
+      toggle.classList.remove('nav__hamburger--active');
+      toggle.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    });
+  });
+}
+
+
+/* ─────────────────────────────────────────
+   5. ACTIVE NAV LINK HIGHLIGHTING
+───────────────────────────────────────── */
+
+function initActiveNavLinks() {
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav__links a:not(.nav__cta)');
+
+  if (!sections.length || !navLinks.length) return;
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const id = entry.target.getAttribute('id');
+          navLinks.forEach((link) => {
+            link.style.color = link.getAttribute('href') === `#${id}` ? '#00C2D4' : '';
+          });
+        }
+      });
+    },
+    {
+      threshold: 0.3,
+      rootMargin: '-72px 0px -50% 0px',
+    }
+  );
+
+  sections.forEach((section) => observer.observe(section));
 }
 
 
@@ -201,4 +228,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initWaitlistForms();
   initScrollReveal();
   initStickyNav();
+  initMobileNav();
+  initActiveNavLinks();
 });
