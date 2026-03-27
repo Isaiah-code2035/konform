@@ -6,7 +6,8 @@
  *   2. Scroll Reveal (Intersection Observer)
  *   3. Sticky Nav with class toggle
  *   4. Mobile Navigation Toggle
- *   5. Smooth scroll for anchor links
+ *   5. Active Nav Link Highlighting
+ *   6. Smooth Scroll for anchor links
  */
 
 'use strict';
@@ -113,13 +114,38 @@ function initWaitlistForms() {
 ───────────────────────────────────────── */
 
 function initScrollReveal() {
+  // Grid/card items — staggered fade up
   const revealElements = document.querySelectorAll(
-    '.feature-card, .coverage__item, .how__step, .why__point, .compliance-card'
+    '.feature-card, .coverage__item, .how__step, .why__point, .compliance-card, .countries__card, .faq__item'
   );
 
-  if (!revealElements.length) return;
+  // Section headers — fade up
+  const headerElements = document.querySelectorAll(
+    '.section__label, .section__title, .section__subtitle'
+  );
 
-  revealElements.forEach((el) => el.classList.add('reveal'));
+  // Mid-page CTAs
+  const ctaElements = document.querySelectorAll('.mid-cta');
+
+  if (revealElements.length) {
+    revealElements.forEach((el) => el.classList.add('reveal'));
+  }
+
+  if (headerElements.length) {
+    headerElements.forEach((el) => el.classList.add('reveal-header'));
+  }
+
+  if (ctaElements.length) {
+    ctaElements.forEach((el) => el.classList.add('reveal-cta'));
+  }
+
+  const allRevealable = [
+    ...revealElements,
+    ...headerElements,
+    ...ctaElements,
+  ];
+
+  if (!allRevealable.length) return;
 
   const observer = new IntersectionObserver(
     (entries) => {
@@ -131,12 +157,12 @@ function initScrollReveal() {
       });
     },
     {
-      threshold: 0.1,
-      rootMargin: '0px 0px -60px 0px',
+      threshold: 0.08,
+      rootMargin: '0px 0px -40px 0px',
     }
   );
 
-  revealElements.forEach((el) => observer.observe(el));
+  allRevealable.forEach((el) => observer.observe(el));
 }
 
 
@@ -148,11 +174,19 @@ function initStickyNav() {
   const nav = document.getElementById('nav');
   if (!nav) return;
 
+  let ticking = false;
+
   const onScroll = () => {
-    if (window.scrollY > 20) {
-      nav.classList.add('nav--scrolled');
-    } else {
-      nav.classList.remove('nav--scrolled');
+    if (!ticking) {
+      requestAnimationFrame(() => {
+        if (window.scrollY > 20) {
+          nav.classList.add('nav--scrolled');
+        } else {
+          nav.classList.remove('nav--scrolled');
+        }
+        ticking = false;
+      });
+      ticking = true;
     }
   };
 
@@ -222,6 +256,60 @@ function initActiveNavLinks() {
 
 
 /* ─────────────────────────────────────────
+   6. SMOOTH SCROLL — enhanced for anchor links
+───────────────────────────────────────── */
+
+function initSmoothScroll() {
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener('click', (e) => {
+      const href = anchor.getAttribute('href');
+      if (href === '#') return;
+
+      const target = document.querySelector(href);
+      if (!target) return;
+
+      e.preventDefault();
+
+      const navHeight = 88;
+      const targetPosition = target.getBoundingClientRect().top + window.scrollY - navHeight;
+
+      window.scrollTo({
+        top: targetPosition,
+        behavior: 'smooth',
+      });
+    });
+  });
+}
+
+
+/* ─────────────────────────────────────────
+   7. COOKIE CONSENT BANNER
+───────────────────────────────────────── */
+
+function initCookieBanner() {
+  const banner = document.getElementById('cookie-banner');
+  if (!banner) return;
+
+  // If user already made a choice, hide immediately
+  if (localStorage.getItem('konforme_cookie_consent')) {
+    banner.hidden = true;
+    return;
+  }
+
+  function hideBanner(choice) {
+    localStorage.setItem('konforme_cookie_consent', choice);
+    banner.classList.add('cookie-banner--hiding');
+    banner.addEventListener('animationend', () => {
+      banner.hidden = true;
+    }, { once: true });
+  }
+
+  document.getElementById('cookie-accept').addEventListener('click', () => hideBanner('accepted'));
+  document.getElementById('cookie-decline').addEventListener('click', () => hideBanner('declined'));
+}
+
+
+/* ─────────────────────────────────────────
    INIT — run all modules on DOM ready
 ───────────────────────────────────────── */
 document.addEventListener('DOMContentLoaded', () => {
@@ -230,4 +318,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initStickyNav();
   initMobileNav();
   initActiveNavLinks();
+  initSmoothScroll();
+  initCookieBanner();
 });

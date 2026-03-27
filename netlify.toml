@@ -17,17 +17,82 @@
   status = 301
   force  = true
 
-# Redirect HTTP to HTTPS (Netlify does this automatically,
-# but explicit is better practice)
+# Redirect HTTP to HTTPS
 [[redirects]]
   from   = "http://konforme.io/*"
   to     = "https://konforme.io/:splat"
   status = 301
   force  = true
 
+# ─── CLEAN URLs ──────────────────────────────────────────
+[[redirects]]
+  from   = "/privacy"
+  to     = "/privacy.html"
+  status = 200
+
+# Language pages — serve /xx/ as /xx/index.html
+[[redirects]]
+  from   = "/de"
+  to     = "/de/index.html"
+  status = 200
+
+[[redirects]]
+  from   = "/fr"
+  to     = "/fr/index.html"
+  status = 200
+
+[[redirects]]
+  from   = "/pt"
+  to     = "/pt/index.html"
+  status = 200
+
+[[redirects]]
+  from   = "/es"
+  to     = "/es/index.html"
+  status = 200
+
+[[redirects]]
+  from   = "/it"
+  to     = "/it/index.html"
+  status = 200
+
+[[redirects]]
+  from   = "/nl"
+  to     = "/nl/index.html"
+  status = 200
+
+[[redirects]]
+  from   = "/pl"
+  to     = "/pl/index.html"
+  status = 200
+
+# ─── BLOCK ACCESS TO SENSITIVE FILES ─────────────────────
+# Return 404 for config files, dotfiles, and source control
+[[redirects]]
+  from   = "/netlify.toml"
+  to     = "/index.html"
+  status = 404
+  force  = true
+
+[[redirects]]
+  from   = "/.git/*"
+  to     = "/index.html"
+  status = 404
+  force  = true
+
+[[redirects]]
+  from   = "/.env*"
+  to     = "/index.html"
+  status = 404
+  force  = true
+
+[[redirects]]
+  from   = "/.gitignore"
+  to     = "/index.html"
+  status = 404
+  force  = true
+
 # ─── SECURITY HEADERS ─────────────────────────────────────
-# Important for a cybersecurity company — these protect
-# your site and signal trust to enterprise buyers
 [[headers]]
   for = "/*"
   [headers.values]
@@ -43,12 +108,20 @@
     # Force HTTPS for 1 year (including subdomains)
     Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
 
-    # Restrict what browsers can load (Content Security Policy)
-    # Allows: self, Google Fonts, your own scripts
-    Content-Security-Policy = "default-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self'; img-src 'self' data:; connect-src 'self';"
+    # Content Security Policy — strict, self-hosted assets only
+    Content-Security-Policy = "default-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self'; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self' https://app.konforme.io;"
 
     # Disable browser features you don't use
-    Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=()"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=()"
+
+    # Prevent Adobe cross-domain policy file loading
+    X-Permitted-Cross-Domain-Policies = "none"
+
+    # Opt out of Google FLoC / Topics tracking
+    Permissions-Policy = "interest-cohort=()"
+
+    # Prevent DNS prefetch abuse
+    X-DNS-Prefetch-Control = "off"
 
 # ─── CACHE HEADERS ────────────────────────────────────────
 # CSS and JS: cache for 1 year (Netlify fingerprints these)
@@ -67,3 +140,14 @@
   for = "/*.html"
   [headers.values]
     Cache-Control = "public, max-age=0, must-revalidate"
+
+# Sitemap and robots: revalidate frequently
+[[headers]]
+  for = "/sitemap.xml"
+  [headers.values]
+    Cache-Control = "public, max-age=3600, must-revalidate"
+
+[[headers]]
+  for = "/robots.txt"
+  [headers.values]
+    Cache-Control = "public, max-age=3600, must-revalidate"
