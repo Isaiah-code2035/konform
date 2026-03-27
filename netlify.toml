@@ -111,14 +111,11 @@
     # Content Security Policy — strict, self-hosted assets only
     Content-Security-Policy = "default-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self'; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self' https://app.konforme.io;"
 
-    # Disable browser features you don't use
-    Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=()"
+    # Disable browser features you don't use + opt out of FLoC/Topics
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=(), interest-cohort=()"
 
     # Prevent Adobe cross-domain policy file loading
     X-Permitted-Cross-Domain-Policies = "none"
-
-    # Opt out of Google FLoC / Topics tracking
-    Permissions-Policy = "interest-cohort=()"
 
     # Prevent DNS prefetch abuse
     X-DNS-Prefetch-Control = "off"
