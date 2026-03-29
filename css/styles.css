@@ -377,11 +377,19 @@ input {
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   padding: 6px;
-  margin-top: 8px;
   min-width: 160px;
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
   z-index: 200;
   flex-direction: column;
+}
+
+.lang-switcher::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 12px;
 }
 
 .lang-switcher:hover .lang-switcher__dropdown {
