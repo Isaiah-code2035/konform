@@ -86,6 +86,27 @@
   to     = "/pl/index.html"
   status = 200
 
+# Locale sub-page clean URLs
+[[redirects]]
+  from   = "/:lang/pricing"
+  to     = "/:lang/pricing.html"
+  status = 200
+
+[[redirects]]
+  from   = "/:lang/article-21"
+  to     = "/:lang/article-21.html"
+  status = 200
+
+[[redirects]]
+  from   = "/:lang/jurisdictions"
+  to     = "/:lang/jurisdictions.html"
+  status = 200
+
+[[redirects]]
+  from   = "/:lang/security"
+  to     = "/:lang/security.html"
+  status = 200
+
 # ─── BLOCK ACCESS TO SENSITIVE FILES ─────────────────────
 # Return 404 for config files, dotfiles, and source control
 [[redirects]]
@@ -129,7 +150,7 @@
     Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
 
     # Content Security Policy — strict, self-hosted assets only
-    Content-Security-Policy = "default-src 'self'; style-src 'self'; font-src 'self'; script-src 'self'; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self' https://app.konforme.io;"
+    Content-Security-Policy = "default-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; script-src 'self'; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self' https://app.konforme.io;"
 
     # Disable browser features you don't use + opt out of FLoC/Topics
     Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=(), interest-cohort=()"
@@ -145,12 +166,12 @@
 [[headers]]
   for = "/css/*"
   [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
+    Cache-Control = "public, max-age=3600, must-revalidate"
 
 [[headers]]
   for = "/js/*"
   [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
+    Cache-Control = "public, max-age=3600, must-revalidate"
 
 # Fonts: cache for 1 year (immutable)
 [[headers]]
