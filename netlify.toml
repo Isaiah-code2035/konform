@@ -30,6 +30,26 @@
   to     = "/privacy.html"
   status = 200
 
+[[redirects]]
+  from   = "/pricing"
+  to     = "/pricing.html"
+  status = 200
+
+[[redirects]]
+  from   = "/article-21"
+  to     = "/article-21.html"
+  status = 200
+
+[[redirects]]
+  from   = "/jurisdictions"
+  to     = "/jurisdictions.html"
+  status = 200
+
+[[redirects]]
+  from   = "/security"
+  to     = "/security.html"
+  status = 200
+
 # Language pages — serve /xx/ as /xx/index.html
 [[redirects]]
   from   = "/de"
@@ -109,7 +129,7 @@
     Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
 
     # Content Security Policy — strict, self-hosted assets only
-    Content-Security-Policy = "default-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self'; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self' https://app.konforme.io;"
+    Content-Security-Policy = "default-src 'self'; style-src 'self'; font-src 'self'; script-src 'self'; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self' https://app.konforme.io;"
 
     # Disable browser features you don't use + opt out of FLoC/Topics
     Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=(), interest-cohort=()"
@@ -129,6 +149,12 @@
 
 [[headers]]
   for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Fonts: cache for 1 year (immutable)
+[[headers]]
+  for = "/fonts/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 

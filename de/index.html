@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Automate NIS2 compliance for your EU company. Scan AWS & Azure infrastructure, assess human factors, evaluate governance — get your audit-ready compliance score in minutes." />
+  <meta name="description" content="Automatisieren Sie die NIS2-Compliance für Ihr EU-Unternehmen. Scannen Sie AWS- und Azure-Infrastruktur, bewerten Sie menschliche Faktoren, evaluieren Sie Governance — erhalten Sie Ihren auditfähigen Compliance-Score in Minuten." />
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
   <meta name="author" content="Konforme" />
   <link rel="canonical" href="https://konforme.io/de/" />
@@ -14,12 +14,10 @@
   <link rel="alternate" hreflang="es" href="https://konforme.io/es/" />
   <link rel="alternate" hreflang="it" href="https://konforme.io/it/" />
   <link rel="alternate" hreflang="nl" href="https://konforme.io/nl/" />
-  <link rel="alternate" hreflang="pl" href="https://konforme.io/pl/" />
   <link rel="alternate" hreflang="x-default" href="https://konforme.io/" />
 
-  <!-- Open Graph -->
   <meta property="og:title" content="Konforme — NIS2-Compliance-Automatisierung für EU-Unternehmen" />
-  <meta property="og:description" content="Scan AWS & Azure infrastructure, assess human factors, evaluate governance — one unified NIS2 compliance score. Covers all 27 EU member states." />
+  <meta property="og:description" content="Scannen Sie AWS- und Azure-Infrastruktur, bewerten Sie menschliche Faktoren, evaluieren Sie Governance — ein einheitlicher NIS2-Compliance-Score. Alle 27 EU-Mitgliedstaaten." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://konforme.io/de/" />
   <meta property="og:site_name" content="Konforme" />
@@ -27,860 +25,296 @@
   <meta property="og:image" content="https://konforme.io/assets/og-image.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="Konforme NIS2 Compliance Platform — dashboard showing compliance score across technical, human, and organisational pillars" />
+  <meta property="og:image:alt" content="Konforme NIS2-Compliance-Plattform" />
 
-  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Konforme — NIS2-Compliance-Automatisierung für EU-Unternehmen" />
-  <meta name="twitter:description" content="Scan AWS & Azure, assess human factors, evaluate governance — one audit-ready NIS2 compliance score. All 27 EU member states." />
+  <meta name="twitter:description" content="Scannen Sie AWS und Azure, bewerten Sie menschliche Faktoren, evaluieren Sie Governance — ein auditfähiger NIS2-Compliance-Score. Alle 27 EU-Mitgliedstaaten." />
   <meta name="twitter:image" content="https://konforme.io/assets/og-image.png" />
 
   <meta name="theme-color" content="#0B1F3A" />
-
-  <!-- Favicons -->
   <link rel="icon" type="image/svg+xml" href="../logo-icon.svg" />
   <link rel="icon" type="image/png" sizes="96x96" href="../assets/favicon-96x96.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png" />
   <title>Konforme — NIS2-Compliance-Automatisierung für EU-Unternehmen</title>
-
-  <!-- Structured Data: Organization -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Konforme",
-    "url": "https://konforme.io",
-    "logo": "https://konforme.io/logo-icon.svg",
-    "description": "Konforme automates NIS2 compliance for EU companies through cloud infrastructure scanning, human factor assessments, and organisational governance evaluation.",
-    "email": "konform@konforme.io",
-    "foundingDate": "2025",
-    "areaServed": {
-      "@type": "Place",
-      "name": "European Union"
-    },
-    "sameAs": []
-  }
-  </script>
-
-  <!-- Structured Data: SoftwareApplication -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Konforme",
-    "applicationCategory": "SecurityApplication",
-    "operatingSystem": "Web",
-    "url": "https://konforme.io",
-    "description": "NIS2 compliance automation platform that scans AWS and Azure cloud infrastructure, assesses human factors, evaluates organisational governance, and generates audit-ready reports for EU companies.",
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "EUR",
-      "description": "Free to get started — no credit card required"
-    },
-    "featureList": [
-      "AWS cloud infrastructure scanning for NIS2 compliance",
-      "Azure cloud infrastructure scanning for NIS2 compliance",
-      "Human factor assessment across NIS2 Article 21 areas",
-      "Organisational governance evaluation and control tracking",
-      "Unified compliance scoring across three pillars",
-      "Country-specific NIS2 compliance for all 27 EU member states",
-      "Employee training campaigns and policy acknowledgments",
-      "Audit-ready PDF compliance reports with remediation roadmaps",
-      "Team collaboration with role-based access control",
-      "Evidence management for audit trails",
-      "EU-hosted infrastructure, GDPR compliant"
-    ],
-    "screenshot": "https://konforme.io/assets/og-image.png"
-  }
-  </script>
-
-  <!-- Structured Data: FAQPage -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What is NIS2 and who does it apply to?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "NIS2 (Directive 2022/2555) is the EU's updated cybersecurity legislation that came into force in October 2024. It applies to medium and large organisations across 18 sectors including energy, healthcare, transport, digital infrastructure, financial services, public administration, and more. Companies with 50+ employees or €10M+ turnover in these sectors must comply or face penalties up to €10 million or 2% of global annual turnover."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What are the penalties for NIS2 non-compliance?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "NIS2 penalties vary by entity classification. Essential entities face fines up to €10 million or 2% of global annual turnover, whichever is higher. Important entities face fines up to €7 million or 1.4% of global annual turnover. Additionally, NIS2 introduces personal liability for management bodies — board members and senior executives can be held personally responsible for compliance failures."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What does NIS2 Article 21 require?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "NIS2 Article 21 requires organisations to implement cybersecurity risk-management measures across 10 areas: (a) risk analysis and information security policies, (b) incident handling, (c) business continuity and disaster recovery, (d) supply chain security, (e) network and information system security, (f) effectiveness assessment and testing, (g) cybersecurity hygiene and training, (h) cryptography and encryption, (i) access control and HR security, and (j) multi-factor authentication and secure communications."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How does Konforme automate NIS2 compliance?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Konforme uses a 3-pillar approach: (1) Technical scanning — automatically checks your AWS or Azure cloud infrastructure against NIS2-mapped controls covering IAM, encryption, network security, logging, and more. (2) Human factor assessment — evaluates organisational maturity across all NIS2 Article 21 areas. (3) Controls tracking — monitors implementation of security controls with evidence management. These three pillars combine into a single compliance score with audit-ready PDF reports and remediation roadmaps."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Does Konforme support both AWS and Azure?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. Konforme supports both Amazon Web Services (AWS) and Microsoft Azure cloud infrastructure scanning. Both providers are scanned against NIS2-mapped controls covering areas like identity and access management, encryption, network security, logging, and business continuity. Both connect via read-only credentials for safe, non-invasive scanning."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Which EU countries does Konforme support?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Konforme unterstützt alle 27 EU-Mitgliedstaaten mit länderspezifischen NIS2-Compliance-Daten. Dazu gehören das nationale Umsetzungsgesetz jedes Landes, die zuständige Behörde, CSIRT-Kontaktdaten, Einrichtungsklassifizierungsregeln, sektorspezifische Anforderungen, Compliance-Fristen und Sanktionsniveaus. Zu den Ländern gehören Deutschland, Frankreich, Italien, Spanien, Niederlande, Belgien, Portugal, Österreich, Irland, Polen und alle weiteren EU-Mitgliedstaaten."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How long does it take to get a NIS2 compliance assessment?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "With Konforme, you can get your first NIS2 compliance score in under 15 minutes. Cloud infrastructure scanning (AWS or Azure) runs automatically and takes 2-5 minutes. The human factor assessment typically takes 15-30 minutes to complete. Organisational controls can be tracked over time as you implement them. Unlike traditional gap assessments that take weeks of consultant time, Konforme provides instant, continuous compliance visibility."
-        }
-      }
-    ]
-  }
-  </script>
-
-  <!-- Structured Data: WebSite -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Konforme",
-    "url": "https://konforme.io"
-  }
-  </script>
-
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-
-  <!-- Stylesheet -->
   <link rel="stylesheet" href="../css/styles.css" />
 </head>
 <body>
 
-  <!-- ═══════════════════════════════════════
-       NAVIGATION
-  ═══════════════════════════════════════ -->
-  <nav class="nav" id="nav">
-    <a href="#" class="nav__logo">
-      <div class="nav__logo-mark">
-        <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <path d="M18 2L4 8V18C4 25.4 10.2 31.8 18 34C25.8 31.8 32 25.4 32 18V8L18 2Z" fill="#0B1F3A" stroke="#00C2D4" stroke-width="1.5"/>
-          <path d="M12 11V25M12 18L20 11M12 18L21 25" stroke="#00C2D4" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </div>
-      <span class="nav__logo-name">Konform<em>e</em></span>
-    </a>
-
-    <ul class="nav__links" role="list" id="nav-links">
-      <li><a href="#why">Warum NIS2</a></li>
-      <li><a href="#features">Funktionen</a></li>
-      <li><a href="#how">So funktioniert es</a></li>
-      <li><a href="#faq">FAQ</a></li>
-      <li>
-        <div class="lang-switcher">
-          <button class="lang-switcher__btn" aria-label="Select language">
-            DE
-            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <header class="masthead">
+    <div class="masthead__inner">
+      <a href="/de/" class="masthead__logo">
+        <div class="masthead__mark"><span>K<span class="masthead__mark-dot"></span></span></div>
+        <span class="masthead__wordmark">Konforme</span>
+      </a>
+      <nav class="masthead__nav">
+        <a href="/de/article-21" class="masthead__link">Article 21</a>
+        <a href="/de/pricing" class="masthead__link">Preise</a>
+        <a href="/de/jurisdictions" class="masthead__link">Jurisdiktionen</a>
+        <a href="/de/security" class="masthead__link">Sicherheit</a>
+        <div class="lang-switch" id="lang-switch">
+          <button class="lang-switch__toggle" aria-expanded="false" aria-haspopup="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10A15.3 15.3 0 0 1 12 2z"/></svg>
+            <span>DE</span>
           </button>
-          <div class="lang-switcher__dropdown">
-            <a href="/">English</a>
-            <a href="/de/" class="active">Deutsch</a>
-            <a href="/fr/">Fran&ccedil;ais</a>
-            <a href="/pt/">Portugu&ecirc;s</a>
-            <a href="/es/">Espa&ntilde;ol</a>
-            <a href="/it/">Italiano</a>
-            <a href="/nl/">Nederlands</a>
-            <a href="/pl/">Polski</a>
+          <div class="lang-switch__dropdown" id="lang-dropdown">
+            <a href="/" class="lang-switch__item" data-lang="en"><span class="lang-switch__item-name">English</span><span class="lang-switch__item-code">EN</span></a>
+            <a href="/pt/" class="lang-switch__item" data-lang="pt"><span class="lang-switch__item-name">Portugu&ecirc;s</span><span class="lang-switch__item-code">PT</span></a>
+            <a href="/de/" class="lang-switch__item is-active" data-lang="de"><span class="lang-switch__item-name">Deutsch</span><span class="lang-switch__item-code">DE</span></a>
+            <a href="/fr/" class="lang-switch__item" data-lang="fr"><span class="lang-switch__item-name">Fran&ccedil;ais</span><span class="lang-switch__item-code">FR</span></a>
+            <a href="/es/" class="lang-switch__item" data-lang="es"><span class="lang-switch__item-name">Espa&ntilde;ol</span><span class="lang-switch__item-code">ES</span></a>
+            <a href="/it/" class="lang-switch__item" data-lang="it"><span class="lang-switch__item-name">Italiano</span><span class="lang-switch__item-code">IT</span></a>
+            <a href="/nl/" class="lang-switch__item" data-lang="nl"><span class="lang-switch__item-name">Nederlands</span><span class="lang-switch__item-code">NL</span></a>
           </div>
         </div>
-      </li>
-      <li><a href="https://app.konforme.io/register" class="nav__cta">Jetzt starten</a></li>
-    </ul>
-
-    <button class="nav__hamburger" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
-      <span class="nav__hamburger-line"></span>
-      <span class="nav__hamburger-line"></span>
-      <span class="nav__hamburger-line"></span>
-    </button>
-  </nav>
-
-  <!-- ═══════════════════════════════════════
-       HERO
-  ═══════════════════════════════════════ -->
-  <section class="hero" id="hero">
-    <!-- Animated gradient orbs -->
-    <div class="hero__orb hero__orb--1" aria-hidden="true"></div>
-    <div class="hero__orb hero__orb--2" aria-hidden="true"></div>
-
-    <div class="hero__content">
-      <div class="hero__badge" aria-label="Status: NIS2 Directive now in force">
-        <span class="hero__badge-dot" aria-hidden="true"></span>
-        NIS2-Richtlinie — Jetzt EU-weit in Kraft
-      </div>
-
-      <h1 class="hero__title">
-        Wissen Sie genau, wo<br/>
-        Ihr Unternehmen bei der<br/>
-        <em>NIS2-Compliance</em> steht
-      </h1>
-
-      <p class="hero__subtitle">
-        Konforme scannt Ihre AWS- und Azure-Infrastruktur, bewertet Ihre Mitarbeiter
-        und evaluiert Ihre Governance — und liefert Ihnen einen einzigen, auditfähigen
-        NIS2-Compliance-Score. Keine Berater. Keine Tabellen. Nur Klarheit.
-      </p>
-
-      <div class="hero__cta" style="animation: fade-up 0.7s 0.3s ease both;">
-        <a href="https://app.konforme.io/register" class="waitlist-form__btn">
-          <span>Kostenlos starten</span>
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10m0 0L9 4m4 4L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </a>
-      </div>
-      <p class="waitlist-form__note" style="animation: fade-up 0.7s 0.4s ease both;">Keine Kreditkarte erforderlich &nbsp;·&nbsp; EU-gehostet &nbsp;·&nbsp; DSGVO-konform</p>
-
-      <div class="hero__stats" aria-label="Key statistics">
-        <div class="hero__stat">
-          <span class="hero__stat-value">3 Säulen</span>
-          <span class="hero__stat-label">Technisch · Mensch · Governance</span>
-        </div>
-        <div class="hero__stat-divider" aria-hidden="true"></div>
-        <div class="hero__stat">
-          <span class="hero__stat-value">27 Länder</span>
-          <span class="hero__stat-label">Alle EU-Mitgliedstaaten</span>
-        </div>
-        <div class="hero__stat-divider" aria-hidden="true"></div>
-        <div class="hero__stat">
-          <span class="hero__stat-value">AWS + Azure</span>
-          <span class="hero__stat-label">Multi-Cloud-Scanning</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- Floating dashboard preview -->
-    <div class="hero__preview" aria-hidden="true">
-      <div class="hero__preview-window">
-        <div class="hero__preview-topbar">
-          <div class="hero__preview-dots">
-            <span></span><span></span><span></span>
-          </div>
-          <div class="hero__preview-url">konforme.io/dashboard</div>
-        </div>
-        <div class="hero__preview-body">
-          <div class="hero__preview-sidebar">
-            <div class="hero__preview-sidebar-item hero__preview-sidebar-item--active"></div>
-            <div class="hero__preview-sidebar-item"></div>
-            <div class="hero__preview-sidebar-item"></div>
-            <div class="hero__preview-sidebar-item"></div>
-            <div class="hero__preview-sidebar-item"></div>
-          </div>
-          <div class="hero__preview-main">
-            <div class="hero__preview-header">
-              <div class="hero__preview-title-bar"></div>
-              <div class="hero__preview-score">
-                <svg viewBox="0 0 36 36" class="hero__preview-ring">
-                  <circle cx="18" cy="18" r="15.9" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="3"/>
-                  <circle cx="18" cy="18" r="15.9" fill="none" stroke="#00C2D4" stroke-width="3" stroke-dasharray="72 100" stroke-linecap="round" transform="rotate(-90 18 18)"/>
-                </svg>
-                <span>B</span>
-              </div>
-            </div>
-            <div class="hero__preview-cards">
-              <div class="hero__preview-card hero__preview-card--pass">
-                <div class="hero__preview-card-dot"></div>
-                <div class="hero__preview-card-lines"><div></div><div></div></div>
-                <span class="hero__preview-card-badge">Technical 85%</span>
-              </div>
-              <div class="hero__preview-card hero__preview-card--warn">
-                <div class="hero__preview-card-dot"></div>
-                <div class="hero__preview-card-lines"><div></div><div></div></div>
-                <span class="hero__preview-card-badge">Human 62%</span>
-              </div>
-              <div class="hero__preview-card hero__preview-card--pass">
-                <div class="hero__preview-card-dot"></div>
-                <div class="hero__preview-card-lines"><div></div><div></div></div>
-                <span class="hero__preview-card-badge">Governance 78%</span>
-              </div>
-            </div>
-            <div class="hero__preview-bars">
-              <div class="hero__preview-bar" style="--bar-width: 85%"></div>
-              <div class="hero__preview-bar" style="--bar-width: 62%"></div>
-              <div class="hero__preview-bar" style="--bar-width: 94%"></div>
-              <div class="hero__preview-bar" style="--bar-width: 45%"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="hero__scroll-hint" aria-hidden="true">
-      <span>Scroll</span>
-      <div class="hero__scroll-arrow"></div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════
-       TRUST / SOCIAL PROOF
-  ═══════════════════════════════════════ -->
-  <section class="trust" aria-label="Trusted by EU companies">
-    <div class="container">
-      <p class="trust__label">Entwickelt für Unternehmen, die EU-Cybersicherheitsregulierung umsetzen</p>
-      <div class="trust__logos">
-        <div class="trust__logo-item">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          <span>NIS2-konform</span>
-        </div>
-        <div class="trust__divider" aria-hidden="true"></div>
-        <div class="trust__logo-item">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" stroke="currentColor" stroke-width="1.5"/></svg>
-          <span>EU-gehostete Infrastruktur</span>
-        </div>
-        <div class="trust__divider" aria-hidden="true"></div>
-        <div class="trust__logo-item">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2" stroke="currentColor" stroke-width="1.5"/><path d="M7 11V7a5 5 0 0110 0v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-          <span>DSGVO-nativ</span>
-        </div>
-        <div class="trust__divider" aria-hidden="true"></div>
-        <div class="trust__logo-item">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="1.5"/></svg>
-          <span>AWS + Azure</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════
-       WHY SECTION
-  ═══════════════════════════════════════ -->
-  <section class="why section" id="why">
-    <div class="container">
-      <span class="section__label">Das Problem</span>
-      <h2 class="section__title">NIS2 ist keine Option.<br/>Die meisten Unternehmen sind nicht bereit.</h2>
-      <p class="section__subtitle">Bußgelder bis zu 10 Mio. &euro; oder 2% des weltweiten Umsatzes. Vorstandsmitglieder haften persönlich. Manuelle Audits dauern Wochen und kosten Zehntausende. Es gibt einen besseren Weg.</p>
-
-      <div class="why__grid">
-
-        <!-- Scanner mockup -->
-        <div class="why__visual" aria-hidden="true">
-          <div class="why__visual-glow"></div>
-          <div class="compliance-card compliance-card--fail">
-            <div class="compliance-card__icon">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 5v3M8 11h.01M14 8A6 6 0 112 8a6 6 0 0112 0z" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
-            </div>
-            <div class="compliance-card__text">
-              <p class="compliance-card__title">MFA not enforced on admin accounts</p>
-              <p class="compliance-card__article">NIS2 Art. 21(2)(j) — Access Control</p>
-            </div>
-            <span class="compliance-card__status compliance-card__status--fail">Failed</span>
-          </div>
-          <div class="compliance-card compliance-card--pass">
-            <div class="compliance-card__icon">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 8.5l3 3 5-6" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
-            <div class="compliance-card__text">
-              <p class="compliance-card__title">Encryption at rest enabled (AES-256)</p>
-              <p class="compliance-card__article">NIS2 Art. 21(2)(h) — Cryptography</p>
-            </div>
-            <span class="compliance-card__status compliance-card__status--pass">Passed</span>
-          </div>
-          <div class="compliance-card compliance-card--warn">
-            <div class="compliance-card__icon">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 5v3M8 11h.01" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><path d="M6.86 2.57L1.21 12a1 1 0 00.86 1.5h11.26a1 1 0 00.86-1.5L8.54 2.57a1 1 0 00-1.68 0z" stroke="currentColor" stroke-width="1.1"/></svg>
-            </div>
-            <div class="compliance-card__text">
-              <p class="compliance-card__title">Audit logs retained for 45 days only</p>
-              <p class="compliance-card__article">NIS2 Art. 21(2)(f) — Logging</p>
-            </div>
-            <span class="compliance-card__status compliance-card__status--warn">Review</span>
-          </div>
-          <div class="compliance-card compliance-card--pass">
-            <div class="compliance-card__icon">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 8.5l3 3 5-6" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
-            <div class="compliance-card__text">
-              <p class="compliance-card__title">DDoS protection enabled on load balancers</p>
-              <p class="compliance-card__article">NIS2 Art. 21(2)(e) — Network Security</p>
-            </div>
-            <span class="compliance-card__status compliance-card__status--pass">Passed</span>
-          </div>
-        </div>
-
-        <!-- Points -->
-        <div class="why__points">
-          <div class="why__point">
-            <div class="why__point-number" aria-hidden="true">1</div>
-            <div>
-              <h3 class="why__point-title">NIS2 ist jetzt EU-weit Gesetz</h3>
-              <p class="why__point-body">Jedes mittlere und große Unternehmen in den Bereichen Energie, Gesundheit, Transport, digitale Dienste und 14 weiteren kritischen Sektoren muss die Richtlinie einhalten. Die Richtlinie ist in allen 27 EU-Mitgliedstaaten in nationales Recht umgesetzt, jeweils mit eigener zuständiger Behörde, Fristen und Durchsetzungsregeln.</p>
-            </div>
-          </div>
-          <div class="why__point">
-            <div class="why__point-number" aria-hidden="true">2</div>
-            <div>
-              <h3 class="why__point-title">Manuelle Compliance kostet zu viel</h3>
-              <p class="why__point-body">Traditionelle Gap-Analysen kosten 15.000–50.000 &euro; pro Auftrag, dauern 4–8 Wochen Beraterzeit und liefern eine Momentaufnahme, die innerhalb von Monaten veraltet ist. NIS2 erfordert kontinuierliche Compliance, keine einmaligen Audits.</p>
-            </div>
-          </div>
-          <div class="why__point">
-            <div class="why__point-number" aria-hidden="true">3</div>
-            <div>
-              <h3 class="why__point-title">Sie brauchen technische, menschliche und organisatorische Abdeckung</h3>
-              <p class="why__point-body">NIS2 Artikel 21 erfordert nicht nur Infrastruktursicherheit. Er schreibt Mitarbeiterschulungen, Vorfallbehandlung, Lieferkettenmanagement und Governance auf Vorstandsebene vor. Konforme deckt alle drei Säulen in einer Plattform ab.</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════
-       FEATURES
-  ═══════════════════════════════════════ -->
-  <section class="features section section--dark" id="features">
-    <div class="container">
-      <span class="section__label">Produkt</span>
-      <h2 class="section__title">Alles, was NIS2 verlangt, in einer Plattform</h2>
-      <p class="section__subtitle">Von Grund auf für EU-Unternehmen entwickelt. Kein umbenanntes US-Compliance-Tool. Jede Funktion ist direkt auf die Anforderungen von NIS2 Artikel 21 abgebildet.</p>
-
-      <div class="features__grid">
-        <article class="feature-card">
-          <div class="feature-card__icon" aria-hidden="true">
-            <!-- Cloud/server icon -->
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="8" rx="2" stroke="currentColor" stroke-width="1.5"/><rect x="2" y="14" width="20" height="8" rx="2" stroke="currentColor" stroke-width="1.5"/><circle cx="6" cy="6" r="1" fill="currentColor"/><circle cx="6" cy="18" r="1" fill="currentColor"/><path d="M10 6h6M10 18h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-          </div>
-          <h3 class="feature-card__title">AWS & Azure Cloud Scanning</h3>
-          <p class="feature-card__body">Verbinden Sie Ihr AWS- oder Azure-Konto über schreibgeschützte Anmeldedaten. Konforme scannt automatisch Ihre Cloud-Konfiguration gegen NIS2-zugeordnete Kontrollen für Identität, Verschlüsselung, Netzwerksicherheit, Protokollierung und mehr.</p>
-        </article>
-        <article class="feature-card">
-          <div class="feature-card__icon" aria-hidden="true">
-            <!-- People/users icon -->
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="1.5"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <h3 class="feature-card__title">Bewertung des Faktors Mensch</h3>
-          <p class="feature-card__body">Bewerten Sie die Sicherheit auf Mitarbeiterseite über alle NIS2-Artikel-21-Bereiche — von Sicherheitsbewusstsein und Vorfallmeldung bis hin zu Zugangskontrolle, Datenverarbeitung und Lieferantenrisikomanagement.</p>
-        </article>
-        <article class="feature-card">
-          <div class="feature-card__icon" aria-hidden="true">
-            <!-- Building/org icon -->
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 22V4a2 2 0 012-2h8a2 2 0 012 2v18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 22h20M10 6h4M10 10h4M10 14h4M10 18h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <h3 class="feature-card__title">Organisatorische Governance</h3>
-          <p class="feature-card__body">Verfolgen Sie Sicherheitskontrollen für Risikopolitiken, Vorfallbehandlung, Geschäftskontinuität, Lieferkettensicherheit und Governance auf Vorstandsebene. Weisen Sie Verantwortliche zu, setzen Sie Fristen und fügen Sie Nachweise für jede Kontrolle bei.</p>
-        </article>
-        <article class="feature-card">
-          <div class="feature-card__icon" aria-hidden="true">
-            <!-- Graduation/training icon -->
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M22 10v6M2 10l10-5 10 5-10 5-10-5z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 12v5c0 1.66 2.69 3 6 3s6-1.34 6-3v-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <h3 class="feature-card__title">Mitarbeiterschulungen</h3>
-          <p class="feature-card__body">Weisen Sie Mitarbeitern Richtlinienbestätigungen und Sicherheitsquizze zu. Verfolgen Sie Abschlussraten, senden Sie E-Mail-Erinnerungen, messen Sie Quizergebnisse und erstellen Sie einen Audit-Trail — alles verknüpft mit Ihren NIS2-Kontrollen.</p>
-        </article>
-        <article class="feature-card">
-          <div class="feature-card__icon" aria-hidden="true">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <h3 class="feature-card__title">Auditfähige Berichte</h3>
-          <p class="feature-card__body">Erstellen Sie PDF-Compliance-Berichte mit Ihrem Gesamtscore, einer Artikel-für-Artikel-Aufschlüsselung, kritischen Befunden mit Maßnahmen und einem priorisierten Maßnahmenplan. Bereit für Ihre Aufsichtsbehörde oder den Vorstand.</p>
-        </article>
-        <article class="feature-card">
-          <div class="feature-card__icon" aria-hidden="true">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" stroke="currentColor" stroke-width="1.5"/></svg>
-          </div>
-          <h3 class="feature-card__title">EU-Hosted & GDPR Native</h3>
-          <p class="feature-card__body">Alle Daten werden in EU-Rechenzentren verarbeitet und gespeichert. Kein Transfer in Drittländer. Cloud-Anmeldedaten werden vor der Speicherung verschlüsselt. Privacy by Design von Anfang an.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- MID-PAGE CTA -->
-  <section class="mid-cta">
-    <div class="container">
-      <div class="mid-cta__inner">
-        <p class="mid-cta__text">Erhalten Sie Ihren ersten NIS2-Compliance-Score in unter 15 Minuten</p>
-        <a href="https://app.konforme.io/register" class="mid-cta__btn">
-          <span>Kostenlos starten</span>
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10m0 0L9 4m4 4L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════
-       HOW IT WORKS
-  ═══════════════════════════════════════ -->
-  <section class="how section" id="how">
-    <div class="container">
-      <span class="section__label">Prozess</span>
-      <h2 class="section__title">Technisch, menschlich und organisatorisch —<br/>ein einheitlicher NIS2-Score</h2>
-      <p class="section__subtitle">NIS2 erfordert mehr als Infrastrukturprüfungen. Konforme deckt alle drei Säulen ab, damit nichts außer Acht gelassen wird.</p>
-
-      <ol class="how__steps" role="list">
-        <li class="how__step">
-          <div class="how__step-num" aria-hidden="true">
-            <span>1</span>
-          </div>
-          <h3 class="how__step-title">Cloud scannen</h3>
-          <p class="how__step-body">Verbinden Sie Ihr AWS- oder Azure-Konto mit schreibgeschützten Anmeldedaten über einen geführten Einrichtungsassistenten. Konforme scannt automatisch Ihre Cloud-Konfiguration gegen NIS2-zugeordnete Kontrollen.</p>
-        </li>
-        <li class="how__step">
-          <div class="how__step-num" aria-hidden="true">
-            <span>2</span>
-          </div>
-          <h3 class="how__step-title">Mitarbeiter bewerten</h3>
-          <p class="how__step-body">Führen Sie die Reifegradbeurteilung über alle NIS2-Artikel-21-Bereiche durch — von Vorfallbehandlung und Schulung bis zu Kryptografie und Zugangskontrolle.</p>
-        </li>
-        <li class="how__step">
-          <div class="how__step-num" aria-hidden="true">
-            <span>3</span>
-          </div>
-          <h3 class="how__step-title">Kontrollen verfolgen</h3>
-          <p class="how__step-body">Überwachen Sie Ihre NIS2-zugeordneten Sicherheitskontrollen. Weisen Sie Verantwortliche zu, setzen Sie Fristen, laden Sie Nachweise hoch und verfolgen Sie den Fortschritt.</p>
-        </li>
-        <li class="how__step">
-          <div class="how__step-num" aria-hidden="true">
-            <span>4</span>
-          </div>
-          <h3 class="how__step-title">Score erhalten</h3>
-          <p class="how__step-body">Sehen Sie einen einheitlichen NIS2-Compliance-Score über alle drei Säulen. Analysieren Sie Lücken nach Artikel, laden Sie Ihren Auditbericht herunter und beginnen Sie mit der Behebung.</p>
-        </li>
-      </ol>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════
-       NIS2 COVERAGE
-  ═══════════════════════════════════════ -->
-  <section class="coverage section section--dark" id="coverage">
-    <div class="container">
-      <span class="section__label">Abdeckung</span>
-      <h2 class="section__title">Vollständige NIS2-Artikel-21-Abdeckung</h2>
-      <p class="section__subtitle">Jede von NIS2 vorgeschriebene Sicherheitsmaßnahme ist abgedeckt. Jede Kontrolle ist direkt den Anforderungen der Richtlinie zugeordnet — nichts bleibt der Interpretation überlassen.</p>
-
-      <ul class="coverage__grid" role="list">
-        <li class="coverage__item">
-          <span class="coverage__check" aria-hidden="true">
-            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M4 8.5l3 3 5-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </span>
-          <div>
-            <p class="coverage__text">Risk analysis & information security policies</p>
-            <p class="coverage__article">Art. 21(2)(a)</p>
-          </div>
-        </li>
-        <li class="coverage__item">
-          <span class="coverage__check" aria-hidden="true">
-            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M4 8.5l3 3 5-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </span>
-          <div>
-            <p class="coverage__text">Incident handling procedures & notification</p>
-            <p class="coverage__article">Art. 21(2)(b)</p>
-          </div>
-        </li>
-        <li class="coverage__item">
-          <span class="coverage__check" aria-hidden="true">
-            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M4 8.5l3 3 5-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </span>
-          <div>
-            <p class="coverage__text">Business continuity & disaster recovery</p>
-            <p class="coverage__article">Art. 21(2)(c)</p>
-          </div>
-        </li>
-        <li class="coverage__item">
-          <span class="coverage__check" aria-hidden="true">
-            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M4 8.5l3 3 5-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </span>
-          <div>
-            <p class="coverage__text">Supply chain security & third-party controls</p>
-            <p class="coverage__article">Art. 21(2)(d)</p>
-          </div>
-        </li>
-        <li class="coverage__item">
-          <span class="coverage__check" aria-hidden="true">
-            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M4 8.5l3 3 5-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </span>
-          <div>
-            <p class="coverage__text">Network & information system security</p>
-            <p class="coverage__article">Art. 21(2)(e)</p>
-          </div>
-        </li>
-        <li class="coverage__item">
-          <span class="coverage__check" aria-hidden="true">
-            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M4 8.5l3 3 5-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </span>
-          <div>
-            <p class="coverage__text">Effectiveness assessment & vulnerability testing</p>
-            <p class="coverage__article">Art. 21(2)(f)</p>
-          </div>
-        </li>
-        <li class="coverage__item">
-          <span class="coverage__check" aria-hidden="true">
-            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M4 8.5l3 3 5-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </span>
-          <div>
-            <p class="coverage__text">Cybersecurity hygiene practices & training</p>
-            <p class="coverage__article">Art. 21(2)(g)</p>
-          </div>
-        </li>
-        <li class="coverage__item">
-          <span class="coverage__check" aria-hidden="true">
-            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M4 8.5l3 3 5-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </span>
-          <div>
-            <p class="coverage__text">Cryptography & encryption policies</p>
-            <p class="coverage__article">Art. 21(2)(h)</p>
-          </div>
-        </li>
-        <li class="coverage__item">
-          <span class="coverage__check" aria-hidden="true">
-            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M4 8.5l3 3 5-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </span>
-          <div>
-            <p class="coverage__text">Access control, identity & HR security</p>
-            <p class="coverage__article">Art. 21(2)(i)</p>
-          </div>
-        </li>
-        <li class="coverage__item">
-          <span class="coverage__check" aria-hidden="true">
-            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M4 8.5l3 3 5-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </span>
-          <div>
-            <p class="coverage__text">Multi-factor authentication & secure communications</p>
-            <p class="coverage__article">Art. 21(2)(j)</p>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════
-       EU COUNTRY SUPPORT
-  ═══════════════════════════════════════ -->
-  <section class="countries section" id="countries">
-    <div class="container">
-      <span class="section__label">EU-Abdeckung</span>
-      <h2 class="section__title">Länderspezifische NIS2-Compliance<br/>für alle 27 EU-Mitgliedstaaten</h2>
-      <p class="section__subtitle">Jedes EU-Land hat NIS2 unterschiedlich in nationales Recht umgesetzt. Konforme verfolgt die spezifischen Regeln jedes Landes, damit Sie es nicht müssen.</p>
-
-      <div class="countries__grid">
-        <div class="countries__card">
-          <div class="countries__card-icon" aria-hidden="true">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 21h18M3 7v14M21 7v14M6 7V4a1 1 0 011-1h10a1 1 0 011 1v3M9 21v-4a2 2 0 012-2h2a2 2 0 012 2v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 7h1M14 7h1M9 10h1M14 10h1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-          </div>
-          <h3 class="countries__card-title">Nationale Umsetzungsgesetze</h3>
-          <p class="countries__card-body">Das spezifische NIS2-Gesetz jedes Landes, Veröffentlichungsdatum und Inkrafttreten — vom deutschen NIS2UmsuCG bis zum portugiesischen Decreto-Lei n.&#186; 125/2025.</p>
-        </div>
-        <div class="countries__card">
-          <div class="countries__card-icon" aria-hidden="true">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <h3 class="countries__card-title">Competent Authorities & CSIRTs</h3>
-          <p class="countries__card-body">Kontaktdaten Ihrer nationalen zuständigen Behörde und Ihres CSIRT — die Regulierungsbehörden, an die Sie melden und mit denen Sie bei Vorfällen zusammenarbeiten.</p>
-        </div>
-        <div class="countries__card">
-          <div class="countries__card-icon" aria-hidden="true">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="1.5"/><path d="M22 21v-2a4 4 0 00-3-3.87" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 3.13a4 4 0 010 7.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-          </div>
-          <h3 class="countries__card-title">Einrichtungsklassifizierung</h3>
-          <p class="countries__card-body">Klassifizierung als wesentliche, wichtige oder öffentliche Einrichtung mit länderspezifischen Schwellenwerten, Sektordefinitionen und entsprechenden Pflichten.</p>
-        </div>
-        <div class="countries__card">
-          <div class="countries__card-icon" aria-hidden="true">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" stroke="currentColor" stroke-width="1.5"/><path d="M16 2v4M8 2v4M3 10h18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <h3 class="countries__card-title">Deadlines & Penalties</h3>
-          <p class="countries__card-body">Länderspezifische Compliance-Fristen, Sanktionsniveaus pro Einrichtungstyp und Managementhaftungsregeln. Wissen Sie genau, was Sie wann schulden.</p>
-        </div>
-      </div>
-
-      <div class="countries__flags">
-        <p class="countries__flags-label">Unterstützte Länder</p>
-        <div class="countries__flags-list">
-          <span>Austria</span><span>Belgium</span><span>Bulgaria</span><span>Croatia</span><span>Cyprus</span><span>Czech Republic</span><span>Denmark</span><span>Estonia</span><span>Finland</span><span>France</span><span>Germany</span><span>Greece</span><span>Hungary</span><span>Ireland</span><span>Italy</span><span>Latvia</span><span>Lithuania</span><span>Luxembourg</span><span>Malta</span><span>Netherlands</span><span>Poland</span><span>Portugal</span><span>Romania</span><span>Slovakia</span><span>Slovenia</span><span>Spain</span><span>Sweden</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- MID-PAGE CTA -->
-  <section class="mid-cta mid-cta--dark">
-    <div class="container">
-      <div class="mid-cta__inner">
-        <p class="mid-cta__text">Bereit zu sehen, wo Ihr Unternehmen bei NIS2 steht?</p>
-        <a href="https://app.konforme.io/register" class="mid-cta__btn">
-          <span>Bewertung starten</span>
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10m0 0L9 4m4 4L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════
-       FAQ
-  ═══════════════════════════════════════ -->
-  <section class="faq section section--dark" id="faq">
-    <div class="container">
-      <span class="section__label">FAQ</span>
-      <h2 class="section__title">Häufig gestellte Fragen</h2>
-      <p class="section__subtitle">Häufige Fragen zur NIS2-Compliance und wie Konforme EU-Unternehmen bei der Erfüllung ihrer Pflichten hilft.</p>
-
-      <div class="faq__list">
-        <details class="faq__item">
-          <summary class="faq__question">
-            <span>Was ist NIS2 und für wen gilt es?</span>
-            <svg class="faq__chevron" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </summary>
-          <div class="faq__answer">
-            <p>NIS2 (Richtlinie 2022/2555) ist die aktualisierte EU-Cybersicherheitsgesetzgebung, die im Oktober 2024 in Kraft getreten ist. Sie gilt für mittlere und große Organisationen in 18 Sektoren, darunter Energie, Gesundheit, Transport, digitale Infrastruktur, Finanzdienstleistungen, öffentliche Verwaltung und mehr. Unternehmen mit 50+ Mitarbeitern oder 10 Mio. &euro;+ Umsatz in diesen Sektoren müssen die Richtlinie einhalten oder Bußgelder bis zu 10 Mio. &euro; oder 2% des weltweiten Jahresumsatzes riskieren.</p>
-          </div>
-        </details>
-
-        <details class="faq__item">
-          <summary class="faq__question">
-            <span>Welche Strafen drohen bei NIS2-Nichteinhaltung?</span>
-            <svg class="faq__chevron" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </summary>
-          <div class="faq__answer">
-            <p>Wesentliche Einrichtungen drohen Bußgelder bis zu 10 Mio. &euro; oder 2% des weltweiten Jahresumsatzes, je nachdem, welcher Betrag höher ist. Wichtige Einrichtungen drohen Bußgelder bis zu 7 Mio. &euro; oder 1,4% des weltweiten Jahresumsatzes. NIS2 führt auch persönliche Haftung für Leitungsorgane ein — Vorstandsmitglieder und Führungskräfte können persönlich für Compliance-Versäumnisse haftbar gemacht werden.</p>
-          </div>
-        </details>
-
-        <details class="faq__item">
-          <summary class="faq__question">
-            <span>Was erfordert NIS2 Artikel 21?</span>
-            <svg class="faq__chevron" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </summary>
-          <div class="faq__answer">
-            <p>Artikel 21 verlangt von Organisationen die Umsetzung von Cybersicherheits-Risikomanagementmaßnahmen in 10 Bereichen: Risikoanalyse und Informationssicherheitsrichtlinien, Vorfallbehandlung, Geschäftskontinuität, Lieferkettensicherheit, Netzwerksicherheit, Wirksamkeitsbewertung, Cyberhygiene und Schulung, Kryptografie, Zugangskontrolle und HR-Sicherheit sowie Multi-Faktor-Authentifizierung. Konforme ordnet jede Bewertung und Kontrolle diesen 10 Anforderungen zu.</p>
-          </div>
-        </details>
-
-        <details class="faq__item">
-          <summary class="faq__question">
-            <span>Wie automatisiert Konforme die NIS2-Compliance?</span>
-            <svg class="faq__chevron" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </summary>
-          <div class="faq__answer">
-            <p>Konforme verwendet einen 3-Säulen-Ansatz. Erstens scannt es automatisch Ihre AWS- oder Azure-Cloud-Infrastruktur gegen NIS2-zugeordnete Kontrollen für Identität, Verschlüsselung, Netzwerksicherheit, Protokollierung und mehr. Zweitens bewertet es Ihre organisatorische Reife über alle NIS2-Artikel-21-Bereiche. Drittens verfolgt es die Umsetzung Ihrer Sicherheitskontrollen mit Nachweismanagement. Diese drei Säulen ergeben einen einzigen Compliance-Score mit auditfähigen PDF-Berichten und einem priorisierten Maßnahmenplan.</p>
-          </div>
-        </details>
-
-        <details class="faq__item">
-          <summary class="faq__question">
-            <span>Unterstützt Konforme sowohl AWS als auch Azure?</span>
-            <svg class="faq__chevron" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </summary>
-          <div class="faq__answer">
-            <p>Ja. Konforme unterstützt sowohl Amazon Web Services (AWS) als auch Microsoft Azure. Beide Anbieter werden gegen NIS2-zugeordnete Kontrollen gescannt, die Bereiche wie Identitäts- und Zugriffsmanagement, Verschlüsselung, Netzwerksicherheit, Protokollierung und Geschäftskontinuität abdecken. Beide verbinden sich über schreibgeschützte Anmeldedaten für sichere, nicht-invasive Scans.</p>
-          </div>
-        </details>
-
-        <details class="faq__item">
-          <summary class="faq__question">
-            <span>Welche EU-Länder unterstützt Konforme?</span>
-            <svg class="faq__chevron" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </summary>
-          <div class="faq__answer">
-            <p>Konforme unterstützt alle 27 EU-Mitgliedstaaten mit länderspezifischen NIS2-Compliance-Daten. Dazu gehören das nationale Umsetzungsgesetz jedes Landes, die zuständige Behörde, CSIRT-Kontaktdaten, Einrichtungsklassifizierungsregeln, sektorspezifische Anforderungen, Compliance-Fristen und Sanktionsniveaus. Zu den Ländern gehören Deutschland, Frankreich, Italien, Spanien, Niederlande, Belgien, Portugal, Österreich, Irland, Polen und alle weiteren EU-Mitgliedstaaten.</p>
-          </div>
-        </details>
-
-        <details class="faq__item">
-          <summary class="faq__question">
-            <span>Wie lange dauert eine NIS2-Compliance-Bewertung?</span>
-            <svg class="faq__chevron" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </summary>
-          <div class="faq__answer">
-            <p>Mit Konforme können Sie Ihren ersten NIS2-Compliance-Score in unter 15 Minuten erhalten. Das Cloud-Infrastruktur-Scanning läuft automatisch und dauert 2–5 Minuten. Die Bewertung des Faktors Mensch dauert typischerweise 15–30 Minuten. Kontrollen können kontinuierlich verfolgt werden, während Sie sie umsetzen. Im Gegensatz zu traditionellen Gap-Analysen, die 4–8 Wochen Beraterzeit beanspruchen, bietet Konforme sofortige, kontinuierliche Compliance-Transparenz.</p>
-          </div>
-        </details>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════
-       FINAL CTA
-  ═══════════════════════════════════════ -->
-  <section class="cta section" id="get-started">
-    <div class="container">
-      <div class="cta__box">
-        <div class="cta__particles" aria-hidden="true">
-          <div class="cta__particle"></div>
-          <div class="cta__particle"></div>
-          <div class="cta__particle"></div>
-          <div class="cta__particle"></div>
-          <div class="cta__particle"></div>
-        </div>
-        <h2 class="section__title">Starten Sie noch heute Ihre NIS2-Compliance-Reise</h2>
-        <p class="section__subtitle cta__subtitle">Erstellen Sie ein kostenloses Konto, verbinden Sie Ihre AWS- oder Azure-Umgebung und erhalten Sie Ihren ersten Compliance-Score in unter 15 Minuten.</p>
-
-        <div class="cta__action">
-          <a href="https://app.konforme.io/register" class="cta__btn">
-            <span>Kostenloses Konto erstellen</span>
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10m0 0L9 4m4 4L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </a>
-        </div>
-        <p class="cta__note">Keine Kreditkarte erforderlich &nbsp;·&nbsp; EU-gehostet &nbsp;·&nbsp; Kostenloser Einstieg</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════
-       FOOTER
-  ═══════════════════════════════════════ -->
-  <footer class="footer">
-    <div class="footer__inner">
-      <div class="footer__brand">
-        <div class="footer__logo">Konform<em>e</em></div>
-        <p class="footer__tagline">NIS2-Compliance-Automatisierung für EU-Unternehmen</p>
-      </div>
-      <nav class="footer__links" aria-label="Footer navigation">
-        <a href="/privacy">Datenschutz</a>
-        <a href="mailto:konform@konforme.io">Kontakt</a>
-        <a href="mailto:konform@konforme.io">konform@konforme.io</a>
+        <a href="https://app.konforme.io/login" class="masthead__link">Anmelden</a>
+        <a href="https://app.konforme.io/register" class="masthead__cta">Kostenlos starten</a>
       </nav>
+      <button class="masthead__hamburger" id="menu-toggle" aria-label="Menü öffnen" aria-expanded="false">
+        <svg viewBox="0 0 20 20" fill="none"><path d="M3 5h14M3 10h14M3 15h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </button>
     </div>
-    <div class="footer__bottom">
-      <p class="footer__note">&copy; 2026 KNF Technologies &nbsp;·&nbsp; EU-based &amp; GDPR compliant</p>
+  </header>
+
+  <div class="mobile-nav" id="mobile-nav" role="dialog" aria-label="Navigation">
+    <button class="mobile-nav__close" id="mobile-nav-close" aria-label="Menü schließen">
+      <svg viewBox="0 0 20 20" fill="none"><path d="M5 5l10 10M15 5L5 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+    </button>
+    <a href="/de/article-21" class="mobile-nav__link">Article 21</a>
+    <a href="/de/pricing" class="mobile-nav__link">Preise</a>
+    <a href="/de/jurisdictions" class="mobile-nav__link">Jurisdiktionen</a>
+    <a href="/de/security" class="mobile-nav__link">Sicherheit</a>
+    <a href="https://app.konforme.io/login" class="mobile-nav__link">Anmelden</a>
+    <a href="https://app.konforme.io/register" class="mobile-nav__link">Kostenlos starten</a>
+  </div>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero__grid">
+        <div class="hero__text">
+          <span class="hero__eyebrow">NIS2-Richtlinie &middot; Jetzt EU-weit in Kraft</span>
+          <h1 class="hero__title">Wissen Sie genau, wo Ihr Unternehmen bei NIS2 steht.</h1>
+          <p class="hero__subtitle">
+            Konforme scannt Ihre Cloud-Infrastruktur, bewertet Ihre Mitarbeiter und evaluiert
+            Ihre Governance &mdash; und gibt Ihnen einen einzigen, auditfähigen Compliance-Score.
+            Keine Berater. Keine Tabellenkalkulationen. Nur Klarheit.
+          </p>
+          <div class="hero__actions">
+            <a href="https://app.konforme.io/register" class="btn btn--primary btn--lg">Kostenlos starten</a>
+            <a href="#platform" class="btn btn--secondary btn--lg">So funktioniert es</a>
+          </div>
+          <div class="hero__trust">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            EU-gehostet &nbsp;&middot;&nbsp; DSGVO-konform &nbsp;&middot;&nbsp; Keine Kreditkarte erforderlich
+          </div>
+        </div>
+        <div class="hero-cards">
+          <div class="hero-card hero-card--score">
+            <div class="hero-card__label">NIS2-Compliance-Score</div>
+            <div class="hero-card__grade">
+              <span class="hero-card__score-num">82.4</span>
+              <span class="hero-card__score-letter">B+</span>
+            </div>
+            <div class="hero-card__bars">
+              <div class="hero-card__bar-row"><span class="hero-card__bar-label">Technisch</span><div class="hero-card__bar-track"><div class="hero-card__bar-fill hero-card__bar-fill--green" style="width: 88%;"></div></div><span class="hero-card__bar-val">88%</span></div>
+              <div class="hero-card__bar-row"><span class="hero-card__bar-label">Bewertung</span><div class="hero-card__bar-track"><div class="hero-card__bar-fill hero-card__bar-fill--amber" style="width: 74%;"></div></div><span class="hero-card__bar-val">74%</span></div>
+              <div class="hero-card__bar-row"><span class="hero-card__bar-label">Kontrollen</span><div class="hero-card__bar-track"><div class="hero-card__bar-fill hero-card__bar-fill--navy" style="width: 81%;"></div></div><span class="hero-card__bar-val">81%</span></div>
+            </div>
+          </div>
+          <div class="hero-card hero-card--article">
+            <div class="hero-card__heading">Article 21 Abdeckung</div>
+            <ul class="hero-card__list">
+              <li class="hero-card__list-item"><span class="hero-card__check">&check;</span><span class="hero-card__list-letter">(a)</span> Risikoanalyse &amp; ISMS-Richtlinien</li>
+              <li class="hero-card__list-item"><span class="hero-card__check">&check;</span><span class="hero-card__list-letter">(b)</span> Vorfallsbehandlung</li>
+              <li class="hero-card__list-item"><span class="hero-card__check">&check;</span><span class="hero-card__list-letter">(h)</span> Kryptographie &amp; Verschlüsselung</li>
+            </ul>
+          </div>
+          <div class="hero-card hero-card--finding">
+            <div class="hero-card__finding-header">
+              <span class="hero-card__finding-id">F-2401</span>
+              <span class="hero-card__badge hero-card__badge--high">HOCH</span>
+            </div>
+            <div class="hero-card__finding-title">S3-Bucket ohne Verschlüsselung</div>
+            <div class="hero-card__finding-desc">Standardverschlüsselung ist für den prod-assets Bucket nicht aktiviert. Art. 21(2)(h).</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section class="section" id="problem">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-header__label">Das Problem</span>
+          <h2 class="section-header__title">NIS2-Compliance ist komplex und teuer</h2>
+        </div>
+        <div class="prose reveal">
+          <p>Die NIS2-Richtlinie ist jetzt in allen EU-Mitgliedstaaten geltendes Recht. Sie gilt für mittlere und große Organisationen in achtzehn Sektoren &mdash; von Energie und Gesundheitswesen bis hin zu digitaler Infrastruktur und öffentlicher Verwaltung. Unternehmen mit fünfzig oder mehr Mitarbeitern oder zehn Millionen Euro Umsatz müssen die Vorgaben einhalten oder mit Strafen von bis zu <strong>&euro;10 Millionen</strong> oder zwei Prozent des weltweiten Jahresumsatzes rechnen. Vorstandsmitglieder haften persönlich.</p>
+          <p>Traditionelle Gap-Assessments kosten &euro;15.000&ndash;50.000 pro Auftrag, dauern vier bis acht Wochen Beraterzeit und liefern eine Momentaufnahme, die innerhalb weniger Monate veraltet ist. NIS2 erfordert <strong>kontinuierliche</strong> Compliance &mdash; keine einmaligen Audits.</p>
+        </div>
+        <blockquote class="reveal" style="margin-top: 2rem;">
+          NIS2 erfordert nicht nur Infrastruktursicherheit. Es schreibt Mitarbeiterschulungen, Vorfallsbehandlung, Lieferkettenmanagement und Governance auf Vorstandsebene vor.
+          <cite>Richtlinie 2022/2555, Article 21</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="section section--gray" id="platform">
+      <div class="container">
+        <div class="section-header section-header--center">
+          <span class="section-header__label">Die Plattform</span>
+          <h2 class="section-header__title">Eine Plattform, drei Compliance-Säulen</h2>
+          <p class="section-header__desc">Von Grund auf für EU-Unternehmen entwickelt. Kein umbenanntes US-Compliance-Tool. Jede Funktion bildet direkt die Anforderungen des Article 21 ab.</p>
+        </div>
+        <div class="score-figure reveal">
+          <div><span class="score-figure__big">3</span><span class="score-figure__label">Compliance-Säulen</span></div>
+          <div><span class="score-figure__stat">27</span><span class="score-figure__detail">EU-Mitgliedstaaten abgedeckt</span></div>
+          <div><span class="score-figure__stat">15 Min</span><span class="score-figure__detail">Bis zu Ihrem ersten Compliance-Score</span></div>
+        </div>
+        <div class="feature-grid reveal" style="margin-top: 3rem;">
+          <div class="feature-card"><div class="feature-card__title">Technisches Scanning</div><div class="feature-card__desc">AWS- und Azure-Infrastruktur wird gegen NIS2-gemappte Kontrollen geprüft &mdash; IAM, Verschlüsselung, Netzwerksicherheit, Protokollierung, Geschäftskontinuität.</div></div>
+          <div class="feature-card"><div class="feature-card__title">Bewertung des menschlichen Faktors</div><div class="feature-card__desc">Bewerten Sie die organisatorische Reife in allen zehn Bereichen des Article 21 &mdash; von Sicherheitsbewusstsein bis Vorfallsmeldung und Lieferantenrisiko.</div></div>
+          <div class="feature-card"><div class="feature-card__title">Kontrollen &amp; Governance</div><div class="feature-card__desc">Verfolgen Sie Sicherheitskontrollen, die auf NIS2 gemappt sind. Weisen Sie Verantwortliche zu, setzen Sie Fristen, laden Sie Nachweise hoch und überwachen Sie die Umsetzung.</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="article-21">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-header__label">Article 21(2)</span>
+          <h2 class="section-header__title">Jede Maßnahme abgedeckt</h2>
+          <p class="section-header__desc">Jede von der Richtlinie vorgeschriebene Sicherheitsmaßnahme ist abgedeckt. Jede Kontrolle bildet direkt Article 21(2) ab.</p>
+        </div>
+        <div class="def-list reveal">
+          <div class="def-list__item"><span class="def-list__letter">(a)</span><div><div class="def-list__title">Risikoanalyse &amp; ISMS-Richtlinien</div><div class="def-list__desc">Richtlinien zur Risikoanalyse und Informationssystemsicherheit, einschließlich Governance-Rahmenwerke und regelmäßige Überprüfungszyklen.</div></div><span class="def-list__meta">Art. 21(2)(a)</span></div>
+          <div class="def-list__item"><span class="def-list__letter">(b)</span><div><div class="def-list__title">Vorfallsbehandlung</div><div class="def-list__desc">Verfahren zur Vorbeugung, Erkennung und Reaktion auf Vorfälle, einschließlich Eskalation und Benachrichtigung.</div></div><span class="def-list__meta">Art. 21(2)(b)</span></div>
+          <div class="def-list__item"><span class="def-list__letter">(c)</span><div><div class="def-list__title">Geschäftskontinuität &amp; Krisenmanagement</div><div class="def-list__desc">Geschäftskontinuität einschließlich Backup-Management, Disaster Recovery und Krisenmanagement.</div></div><span class="def-list__meta">Art. 21(2)(c)</span></div>
+          <div class="def-list__item"><span class="def-list__letter">(d)</span><div><div class="def-list__title">Lieferkettensicherheit</div><div class="def-list__desc">Sicherheitsaspekte in Bezug auf die Beziehungen zwischen jeder Einrichtung und ihren direkten Lieferanten oder Dienstleistern.</div></div><span class="def-list__meta">Art. 21(2)(d)</span></div>
+          <div class="def-list__item"><span class="def-list__letter">(e)</span><div><div class="def-list__title">Netz- und Informationssystemsicherheit</div><div class="def-list__desc">Sicherheit bei Erwerb, Entwicklung und Wartung von Netz- und Informationssystemen, einschließlich Schwachstellenmanagement.</div></div><span class="def-list__meta">Art. 21(2)(e)</span></div>
+          <div class="def-list__item"><span class="def-list__letter">(f)</span><div><div class="def-list__title">Wirksamkeitsbewertung</div><div class="def-list__desc">Richtlinien und Verfahren zur Bewertung der Wirksamkeit von Cybersicherheits-Risikomanagementmaßnahmen.</div></div><span class="def-list__meta">Art. 21(2)(f)</span></div>
+          <div class="def-list__item"><span class="def-list__letter">(g)</span><div><div class="def-list__title">Cyberhygiene &amp; Schulung</div><div class="def-list__desc">Grundlegende Cyberhygiene-Praktiken und Cybersicherheitsschulungen für Mitarbeiter auf allen Ebenen.</div></div><span class="def-list__meta">Art. 21(2)(g)</span></div>
+          <div class="def-list__item"><span class="def-list__letter">(h)</span><div><div class="def-list__title">Kryptographie &amp; Verschlüsselung</div><div class="def-list__desc">Richtlinien und Verfahren zur Verwendung von Kryptographie und gegebenenfalls Verschlüsselung.</div></div><span class="def-list__meta">Art. 21(2)(h)</span></div>
+          <div class="def-list__item"><span class="def-list__letter">(i)</span><div><div class="def-list__title">Personalsicherheit &amp; Zugangskontrolle</div><div class="def-list__desc">Personalsicherheit, Zugangskontrollen und Asset-Management.</div></div><span class="def-list__meta">Art. 21(2)(i)</span></div>
+          <div class="def-list__item"><span class="def-list__letter">(j)</span><div><div class="def-list__title">Multi-Faktor-Authentifizierung</div><div class="def-list__desc">Einsatz von Multi-Faktor-Authentifizierung, gesicherte Sprach-, Video- und Textkommunikation sowie gesicherte Notfallkommunikationssysteme.</div></div><span class="def-list__meta">Art. 21(2)(j)</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--gray" id="how">
+      <div class="container">
+        <div class="section-header section-header--center">
+          <span class="section-header__label">So funktioniert es</span>
+          <h2 class="section-header__title">Vier Schritte zur Compliance-Klarheit</h2>
+        </div>
+        <div class="feature-grid reveal" style="grid-template-columns: repeat(4, 1fr);">
+          <div class="feature-card" style="text-align: center;"><div style="font-weight: 700; font-size: 1.5rem; color: var(--navy); margin-bottom: 0.5rem;">1</div><div class="feature-card__title">Cloud scannen</div><div class="feature-card__desc">Verbinden Sie AWS oder Azure mit schreibgeschützten Zugangsdaten. Automatisiertes Scanning gegen NIS2-gemappte Kontrollen.</div></div>
+          <div class="feature-card" style="text-align: center;"><div style="font-weight: 700; font-size: 1.5rem; color: var(--navy); margin-bottom: 0.5rem;">2</div><div class="feature-card__title">Mitarbeiter bewerten</div><div class="feature-card__desc">Vervollständigen Sie die Reifebewertung über alle zehn Bereiche des Article 21.</div></div>
+          <div class="feature-card" style="text-align: center;"><div style="font-weight: 700; font-size: 1.5rem; color: var(--navy); margin-bottom: 0.5rem;">3</div><div class="feature-card__title">Kontrollen verfolgen</div><div class="feature-card__desc">Überwachen Sie Sicherheitskontrollen, weisen Sie Verantwortliche zu, setzen Sie Fristen, laden Sie Nachweise hoch.</div></div>
+          <div class="feature-card" style="text-align: center;"><div style="font-weight: 700; font-size: 1.5rem; color: var(--navy); margin-bottom: 0.5rem;">4</div><div class="feature-card__title">Score erhalten</div><div class="feature-card__desc">Ein einheitlicher NIS2-Compliance-Score. Laden Sie Ihren Auditbericht herunter und beginnen Sie mit der Behebung.</div></div>
+        </div>
+        <div style="margin-top: 3rem; text-align: center;"><a href="https://app.konforme.io/register" class="btn btn--primary btn--lg">Bewertung starten</a></div>
+      </div>
+    </section>
+
+    <section class="section" id="jurisdictions">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-header__label">Abdeckung</span>
+          <h2 class="section-header__title">Alle 27 EU-Mitgliedstaaten</h2>
+          <p class="section-header__desc">Jedes EU-Land hat NIS2 unterschiedlich in nationales Recht umgesetzt. Konforme verfolgt das jeweilige Umsetzungsgesetz, die zuständige Behörde, CSIRT, Einstufungsregeln, Fristen und Sanktionsniveaus.</p>
+        </div>
+        <div class="score-figure reveal">
+          <div><span class="score-figure__big">27</span><span class="score-figure__label">EU-Mitgliedstaaten</span></div>
+          <div><span class="score-figure__stat">18</span><span class="score-figure__detail">Kritische Sektoren abgedeckt</span></div>
+          <div><span class="score-figure__stat">&euro;10M</span><span class="score-figure__detail">Maximale Strafe für wesentliche Einrichtungen</span></div>
+        </div>
+        <div style="margin-top: 2.5rem;">
+          <p style="font-size: var(--text-xs); font-weight: 600; color: var(--slate-400); text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 1rem;">Unterstützte Länder</p>
+          <p style="font-size: var(--text-sm); color: var(--slate-500); line-height: 2;">Belgien &middot; Bulgarien &middot; Dänemark &middot; Deutschland &middot; Estland &middot; Finnland &middot; Frankreich &middot; Griechenland &middot; Irland &middot; Italien &middot; Kroatien &middot; Lettland &middot; Litauen &middot; Luxemburg &middot; Malta &middot; Niederlande &middot; Österreich &middot; Polen &middot; Portugal &middot; Rumänien &middot; Schweden &middot; Slowakei &middot; Slowenien &middot; Spanien &middot; Tschechische Republik &middot; Ungarn &middot; Zypern</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--gray" id="faq">
+      <div class="container">
+        <div class="section-header section-header--center">
+          <span class="section-header__label">FAQ</span>
+          <h2 class="section-header__title">Häufig gestellte Fragen</h2>
+        </div>
+        <div style="max-width: 720px; margin: 0 auto;">
+          <div class="faq-item"><button class="faq-item__q" aria-expanded="false"><span>Was ist NIS2 und für wen gilt es?</span><span class="faq-item__arrow">&darr;</span></button><div class="faq-item__a" style="max-height: 0; overflow: hidden;"><p>NIS2 (Richtlinie 2022/2555) ist die aktualisierte Cybersicherheitsgesetzgebung der EU, die im Oktober 2024 in Kraft getreten ist. Sie gilt für mittlere und große Organisationen in 18 Sektoren, darunter Energie, Gesundheitswesen, Verkehr, digitale Infrastruktur, Finanzdienstleistungen und öffentliche Verwaltung. Unternehmen mit mehr als 50 Mitarbeitern oder einem Umsatz von über &euro;10 Mio. in diesen Sektoren müssen die Anforderungen erfüllen oder mit Strafen von bis zu &euro;10 Millionen oder 2% des weltweiten Jahresumsatzes rechnen.</p></div></div>
+          <div class="faq-item"><button class="faq-item__q" aria-expanded="false"><span>Welche Strafen drohen bei NIS2-Nichteinhaltung?</span><span class="faq-item__arrow">&darr;</span></button><div class="faq-item__a" style="max-height: 0; overflow: hidden;"><p>Wesentliche Einrichtungen müssen mit Bußgeldern von bis zu &euro;10 Millionen oder 2% des weltweiten Jahresumsatzes rechnen. Wichtige Einrichtungen mit bis zu &euro;7 Millionen oder 1,4%. NIS2 führt auch eine persönliche Haftung für Leitungsorgane ein &mdash; Vorstandsmitglieder und Führungskräfte können persönlich für Compliance-Verstöße verantwortlich gemacht werden.</p></div></div>
+          <div class="faq-item"><button class="faq-item__q" aria-expanded="false"><span>Was erfordert Article 21 der NIS2?</span><span class="faq-item__arrow">&darr;</span></button><div class="faq-item__a" style="max-height: 0; overflow: hidden;"><p>Article 21 erfordert, dass Organisationen Cybersicherheits-Risikomanagementmaßnahmen in 10 Bereichen umsetzen: Risikoanalyse und Informationssicherheitsrichtlinien, Vorfallsbehandlung, Geschäftskontinuität, Lieferkettensicherheit, Netzwerksicherheit, Wirksamkeitsbewertung, Cyberhygiene und Schulung, Kryptographie, Zugangskontrolle und Personalsicherheit sowie Multi-Faktor-Authentifizierung.</p></div></div>
+          <div class="faq-item"><button class="faq-item__q" aria-expanded="false"><span>Wie automatisiert Konforme die NIS2-Compliance?</span><span class="faq-item__arrow">&darr;</span></button><div class="faq-item__a" style="max-height: 0; overflow: hidden;"><p>Konforme verwendet einen Drei-Säulen-Ansatz: Erstens scannt es Ihre AWS- oder Azure-Cloud-Infrastruktur gegen NIS2-gemappte Kontrollen. Zweitens bewertet es die organisatorische Reife in allen Bereichen des Article 21. Drittens verfolgt es die Umsetzung von Sicherheitskontrollen mit Nachweismanagement. Diese drei Säulen ergeben einen einzigen Compliance-Score mit auditfähigen PDF-Berichten.</p></div></div>
+          <div class="faq-item"><button class="faq-item__q" aria-expanded="false"><span>Unterstützt Konforme sowohl AWS als auch Azure?</span><span class="faq-item__arrow">&darr;</span></button><div class="faq-item__a" style="max-height: 0; overflow: hidden;"><p>Ja. Konforme unterstützt sowohl Amazon Web Services als auch Microsoft Azure. Beide Anbieter werden gegen NIS2-gemappte Kontrollen gescannt, die Identitäts- und Zugriffsmanagement, Verschlüsselung, Netzwerksicherheit, Protokollierung und Geschäftskontinuität abdecken.</p></div></div>
+          <div class="faq-item"><button class="faq-item__q" aria-expanded="false"><span>Welche EU-Länder unterstützt Konforme?</span><span class="faq-item__arrow">&darr;</span></button><div class="faq-item__a" style="max-height: 0; overflow: hidden;"><p>Konforme unterstützt alle 27 EU-Mitgliedstaaten mit länderspezifischen NIS2-Compliance-Daten, einschließlich des nationalen Umsetzungsgesetzes, der zuständigen Behörde, CSIRT-Kontaktdaten, Einstufungsregeln, sektorspezifischen Anforderungen und Sanktionsniveaus.</p></div></div>
+          <div class="faq-item"><button class="faq-item__q" aria-expanded="false"><span>Wie lange dauert eine Compliance-Bewertung?</span><span class="faq-item__arrow">&darr;</span></button><div class="faq-item__a" style="max-height: 0; overflow: hidden;"><p>Mit Konforme können Sie Ihren ersten NIS2-Compliance-Score in unter fünfzehn Minuten erhalten. Das Cloud-Infrastruktur-Scanning läuft automatisch und dauert zwei bis fünf Minuten. Die Bewertung des menschlichen Faktors dauert typischerweise fünfzehn bis dreißig Minuten.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section--dark section">
+      <div class="container" style="text-align: center; padding-top: 3rem; padding-bottom: 3rem;">
+        <h2 style="font-weight: 700; font-size: var(--text-3xl); color: var(--white); margin-bottom: 1rem;">Starten Sie heute Ihre NIS2-Compliance-Reise</h2>
+        <p style="color: rgba(255,255,255,0.7); max-width: 45ch; margin: 0 auto 2rem; font-size: var(--text-lg);">Erstellen Sie ein kostenloses Konto, verbinden Sie Ihre AWS- oder Azure-Umgebung und erhalten Sie Ihren ersten Compliance-Score in unter fünfzehn Minuten.</p>
+        <a href="https://app.konforme.io/register" class="btn btn--white btn--lg">Kostenloses Konto erstellen</a>
+        <p style="font-size: var(--text-xs); color: rgba(255,255,255,0.5); margin-top: 1.5rem;">Keine Kreditkarte erforderlich &nbsp;&middot;&nbsp; EU-gehostet &nbsp;&middot;&nbsp; DSGVO-konform</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="colophon">
+    <div class="container">
+      <div class="colophon__grid">
+        <div class="colophon__about">
+          <span class="masthead__wordmark" style="font-size: 1.125rem;">Konforme</span>
+          <p style="font-size: var(--text-sm); color: var(--slate-500); margin-top: 0.75rem; line-height: 1.6;">NIS2-Compliance-Automatisierung für EU-Unternehmen. In der EU entwickelt, in der EU gehostet, für Organisationen, die europäische Cybersicherheitsregulierung navigieren.</p>
+        </div>
+        <div>
+          <p class="colophon__heading">Produkt</p>
+          <a href="/de/article-21" class="colophon__link">Article 21</a>
+          <a href="/de/pricing" class="colophon__link">Preise</a>
+          <a href="/de/jurisdictions" class="colophon__link">Jurisdiktionen</a>
+          <a href="/de/security" class="colophon__link">Sicherheit</a>
+        </div>
+        <div>
+          <p class="colophon__heading">Unternehmen</p>
+          <a href="/de/privacy" class="colophon__link">Datenschutzerklärung</a>
+          <a href="mailto:konform@konforme.io" class="colophon__link">Kontakt</a>
+        </div>
+        <div>
+          <p class="colophon__heading">App</p>
+          <a href="https://app.konforme.io/register" class="colophon__link">Starten</a>
+          <a href="https://app.konforme.io/login" class="colophon__link">Anmelden</a>
+        </div>
+      </div>
+      <div class="colophon__langs">
+        <a href="/" class="colophon__lang">EN</a>
+        <a href="/pt/" class="colophon__lang">PT</a>
+        <a href="/de/" class="colophon__lang is-active">DE</a>
+        <a href="/fr/" class="colophon__lang">FR</a>
+        <a href="/es/" class="colophon__lang">ES</a>
+        <a href="/it/" class="colophon__lang">IT</a>
+        <a href="/nl/" class="colophon__lang">NL</a>
+      </div>
+      <div class="colophon__bottom">
+        <span class="colophon__legal">&copy; 2026 KNF Technologies &middot; EU-basiert &amp; DSGVO-konform</span>
+        <span class="colophon__legal">konform@konforme.io</span>
+      </div>
     </div>
   </footer>
 
-  <!-- Cookie Consent Banner -->
-  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent">
-    <p class="cookie-banner__text">
-      We use cookies to improve your experience. See our <a href="/privacy">Datenschutz</a> for details.
-    </p>
-    <div class="cookie-banner__actions">
-      <button class="cookie-banner__btn cookie-banner__btn--accept" id="cookie-accept">Akzeptieren</button>
-      <button class="cookie-banner__btn cookie-banner__btn--decline" id="cookie-decline">Ablehnen</button>
+  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie-Zustimmung">
+    <span class="cookie-banner__text">Wir verwenden Cookies, um Ihre Erfahrung zu verbessern. Lesen Sie unsere <a href="/de/privacy" style="text-decoration: underline; opacity: 0.7;">Datenschutzerklärung</a>.</span>
+    <div style="display: flex; gap: 0.5rem;">
+      <button class="cookie-banner__btn" id="cookie-accept">Akzeptieren</button>
+      <button class="cookie-banner__btn" id="cookie-decline">Ablehnen</button>
     </div>
   </div>
 
-  <!-- JavaScript -->
   <script src="../js/main.js"></script>
 </body>
 </html>

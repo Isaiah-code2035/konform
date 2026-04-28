@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NIS2 Article 21(2) — as dez medidas de gestão de riscos de cibersegurança. Análise detalhada de cada requisito e como o Konforme o ajuda a cumprir." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://konforme.io/pt/article-21" />
+  <meta property="og:title" content="Article 21 — Requisitos de Conformidade NIS2 — Konforme" />
+  <meta property="og:description" content="As dez medidas de gestão de riscos de cibersegurança exigidas pelo Article 21(2) da NIS2, explicadas." />
+  <meta property="og:url" content="https://konforme.io/pt/article-21" />
+  <meta name="theme-color" content="#0B1F3A" />
+  <link rel="icon" type="image/svg+xml" href="../logo-icon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png" />
+  <title>Article 21 — Requisitos de Conformidade NIS2 — Konforme</title>
+  <link rel="preload" href="../fonts/Switzer-Variable.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+
+  <!-- MASTHEAD -->
+  <header class="masthead">
+    <div class="masthead__inner">
+      <a href="/pt/" class="masthead__logo">
+        <div class="masthead__mark"><span>K<span class="masthead__mark-dot"></span></span></div>
+        <span class="masthead__wordmark">Konforme</span>
+      </a>
+      <nav class="masthead__nav">
+        <a href="/pt/article-21" class="masthead__link" style="color: var(--ink);">Article 21</a>
+        <a href="/pt/pricing" class="masthead__link">Preços</a>
+        <a href="/pt/jurisdictions" class="masthead__link">Jurisdições</a>
+        <a href="/pt/security" class="masthead__link">Segurança</a>
+        <div class="lang-switch" id="lang-switch">
+          <button class="lang-switch__toggle" aria-expanded="false" aria-haspopup="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10A15.3 15.3 0 0 1 12 2z"/></svg>
+            <span>PT</span>
+          </button>
+          <div class="lang-switch__dropdown" id="lang-dropdown">
+            <a href="/article-21" class="lang-switch__item" data-lang="en"><span class="lang-switch__item-name">English</span><span class="lang-switch__item-code">EN</span></a>
+            <a href="/pt/article-21" class="lang-switch__item is-active" data-lang="pt"><span class="lang-switch__item-name">Portugu&ecirc;s</span><span class="lang-switch__item-code">PT</span></a>
+            <a href="/de/article-21" class="lang-switch__item" data-lang="de"><span class="lang-switch__item-name">Deutsch</span><span class="lang-switch__item-code">DE</span></a>
+            <a href="/fr/article-21" class="lang-switch__item" data-lang="fr"><span class="lang-switch__item-name">Fran&ccedil;ais</span><span class="lang-switch__item-code">FR</span></a>
+            <a href="/es/article-21" class="lang-switch__item" data-lang="es"><span class="lang-switch__item-name">Espa&ntilde;ol</span><span class="lang-switch__item-code">ES</span></a>
+            <a href="/it/article-21" class="lang-switch__item" data-lang="it"><span class="lang-switch__item-name">Italiano</span><span class="lang-switch__item-code">IT</span></a>
+            <a href="/nl/article-21" class="lang-switch__item" data-lang="nl"><span class="lang-switch__item-name">Nederlands</span><span class="lang-switch__item-code">NL</span></a>
+          </div>
+        </div>
+        <a href="https://app.konforme.io/login" class="masthead__link">Entrar</a>
+        <a href="https://app.konforme.io/register" class="masthead__cta">Começar grátis</a>
+      </nav>
+      <button class="masthead__hamburger" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <svg viewBox="0 0 20 20" fill="none"><path d="M3 5h14M3 10h14M3 15h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-nav" id="mobile-nav" role="dialog" aria-label="Navegação">
+    <button class="mobile-nav__close" id="mobile-nav-close" aria-label="Fechar menu">
+      <svg viewBox="0 0 20 20" fill="none"><path d="M5 5l10 10M15 5L5 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+    </button>
+    <a href="/pt/" class="mobile-nav__link">Início</a>
+    <a href="/pt/article-21" class="mobile-nav__link">Article 21</a>
+    <a href="/pt/pricing" class="mobile-nav__link">Preços</a>
+    <a href="/pt/jurisdictions" class="mobile-nav__link">Jurisdições</a>
+    <a href="/pt/security" class="mobile-nav__link">Segurança</a>
+    <a href="https://app.konforme.io/register" class="mobile-nav__link">Começar grátis</a>
+  </div>
+
+  <main>
+    <!-- Title Block -->
+    <div class="container">
+      <div class="title-block">
+        <div class="title-block__meta">
+          <span>Diretiva NIS2</span>
+          <span>Article 21(2)</span>
+          <span>Diretiva 2022/2555</span>
+        </div>
+        <p class="title-block__eyebrow">As dez medidas de gestão de riscos de cibersegurança.</p>
+        <h1 class="title-block__title">Article 21(2).</h1>
+      </div>
+    </div>
+
+    <!-- Introdução -->
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div class="prose dropcap">
+          <p>
+            O Article 21 da <em>Diretiva NIS2</em> exige que os Estados-Membros assegurem que as entidades essenciais e
+            importantes adotem medidas técnicas, operacionais e organizacionais adequadas e proporcionadas para gerir
+            os riscos colocados à segurança das redes e dos sistemas de informação. Estas medidas devem basear-se numa
+            abordagem de todos os perigos e incluir, no mínimo, as dez áreas seguintes.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- As dez medidas -->
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+
+        <!-- (a) -->
+        <div class="chapter-head" id="a">
+          <span class="chapter-head__num">(a)</span>
+          <span class="chapter-head__title">Análise de riscos e políticas de segurança da informação.</span>
+          <span class="chapter-head__rule"></span>
+        </div>
+        <div class="prose" style="margin-bottom: 3rem;">
+          <p>
+            As organizações devem estabelecer e manter políticas de análise de riscos e segurança dos sistemas de informação.
+            Isto inclui a definição de um quadro de governação, a realização de avaliações de risco regulares, a manutenção de um
+            registo de riscos e o estabelecimento de ciclos de revisão das políticas de segurança. A avaliação do Konforme abrange
+            a maturidade das políticas, a completude do registo de riscos e a estrutura de governação.
+          </p>
+        </div>
+
+        <!-- (b) -->
+        <div class="chapter-head" id="b">
+          <span class="chapter-head__num">(b)</span>
+          <span class="chapter-head__title">Tratamento de incidentes.</span>
+          <span class="chapter-head__rule"></span>
+        </div>
+        <div class="prose" style="margin-bottom: 3rem;">
+          <p>
+            Procedimentos para a prevenção, deteção e resposta a incidentes, incluindo caminhos de escalamento e
+            obrigações de notificação. A NIS2 introduz prazos rigorosos de reporte de incidentes &mdash; um alerta
+            precoce em 24 horas, uma notificação do incidente em 72 horas e um relatório final no prazo de um mês.
+            O Konforme acompanha a maturidade do seu tratamento de incidentes e a prontidão do plano de resposta.
+          </p>
+        </div>
+
+        <!-- (c) -->
+        <div class="chapter-head" id="c">
+          <span class="chapter-head__num">(c)</span>
+          <span class="chapter-head__title">Continuidade de negócio e gestão de crises.</span>
+          <span class="chapter-head__rule"></span>
+        </div>
+        <div class="prose" style="margin-bottom: 3rem;">
+          <p>
+            Gestão da continuidade de negócio, incluindo gestão de cópias de segurança, recuperação de desastres e
+            gestão de crises. As organizações devem garantir que conseguem manter as funções essenciais durante e após
+            um incidente. O Konforme analisa as suas configurações de backup na cloud e avalia a maturidade da sua
+            documentação de PCN/PRD.
+          </p>
+        </div>
+
+        <!-- (d) -->
+        <div class="chapter-head" id="d">
+          <span class="chapter-head__num">(d)</span>
+          <span class="chapter-head__title">Segurança da cadeia de abastecimento.</span>
+          <span class="chapter-head__rule"></span>
+        </div>
+        <div class="prose" style="margin-bottom: 3rem;">
+          <p>
+            Aspetos relacionados com a segurança nas relações entre cada entidade e os seus fornecedores diretos
+            ou prestadores de serviços. Isto inclui a avaliação do risco dos fornecedores, requisitos contratuais de
+            segurança e a monitorização da cadeia de abastecimento quanto a vulnerabilidades. O Konforme avalia os
+            seus processos de gestão de risco de fornecedores e controlos de terceiros.
+          </p>
+        </div>
+
+        <!-- (e) -->
+        <div class="chapter-head" id="e">
+          <span class="chapter-head__num">(e)</span>
+          <span class="chapter-head__title">Segurança das redes e dos sistemas de informação.</span>
+          <span class="chapter-head__rule"></span>
+        </div>
+        <div class="prose" style="margin-bottom: 3rem;">
+          <p>
+            Segurança na aquisição, desenvolvimento e manutenção de redes e sistemas de informação, incluindo
+            tratamento e divulgação de vulnerabilidades. O scanner técnico do Konforme verifica as suas configurações
+            AWS e Azure em relação a controlos mapeados para a NIS2 — segmentação de rede, regras de firewall, segurança
+            de VPC e gestão de vulnerabilidades.
+          </p>
+        </div>
+
+        <!-- (f) -->
+        <div class="chapter-head" id="f">
+          <span class="chapter-head__num">(f)</span>
+          <span class="chapter-head__title">Avaliação da eficácia.</span>
+          <span class="chapter-head__rule"></span>
+        </div>
+        <div class="prose" style="margin-bottom: 3rem;">
+          <p>
+            Políticas e procedimentos para avaliar a eficácia das medidas de gestão de riscos de cibersegurança.
+            As organizações devem testar e avaliar regularmente a sua postura de segurança. O Konforme fornece uma
+            pontuação contínua que mostra exatamente onde estão as lacunas de conformidade e como estão a evoluir ao longo do tempo.
+          </p>
+        </div>
+
+        <!-- (g) -->
+        <div class="chapter-head" id="g">
+          <span class="chapter-head__num">(g)</span>
+          <span class="chapter-head__title">Ciber-higiene e formação.</span>
+          <span class="chapter-head__rule"></span>
+        </div>
+        <div class="prose" style="margin-bottom: 3rem;">
+          <p>
+            Práticas básicas de ciber-higiene e formação em cibersegurança para os colaboradores. A NIS2 exige
+            explicitamente que os órgãos de gestão também recebam formação. As campanhas de formação de colaboradores
+            do Konforme permitem atribuir reconhecimentos de políticas e questionários de segurança, acompanhar
+            a conclusão e criar um registo de auditoria.
+          </p>
+        </div>
+
+        <!-- (h) -->
+        <div class="chapter-head" id="h">
+          <span class="chapter-head__num">(h)</span>
+          <span class="chapter-head__title">Criptografia e encriptação.</span>
+          <span class="chapter-head__rule"></span>
+        </div>
+        <div class="prose" style="margin-bottom: 3rem;">
+          <p>
+            Políticas e procedimentos relativos à utilização de criptografia e, quando apropriado, encriptação.
+            O scanner técnico do Konforme verifica as configurações de encriptação em repouso e em trânsito em toda
+            a sua infraestrutura cloud &mdash; buckets S3, instâncias RDS, volumes EBS, Azure Storage, entre outros.
+          </p>
+        </div>
+
+        <!-- (i) -->
+        <div class="chapter-head" id="i">
+          <span class="chapter-head__num">(i)</span>
+          <span class="chapter-head__title">Segurança de RH e controlo de acessos.</span>
+          <span class="chapter-head__rule"></span>
+        </div>
+        <div class="prose" style="margin-bottom: 3rem;">
+          <p>
+            Segurança dos recursos humanos, políticas de controlo de acessos e gestão de ativos. Isto abrange todo
+            o ciclo de vida do colaborador, desde a integração até à saída, controlo de acessos baseado em funções
+            e princípios de privilégio mínimo. O Konforme verifica as configurações IAM, políticas de palavras-passe
+            e avalia os seus processos de segurança de RH.
+          </p>
+        </div>
+
+        <!-- (j) -->
+        <div class="chapter-head" id="j">
+          <span class="chapter-head__num">(j)</span>
+          <span class="chapter-head__title">Autenticação multifator.</span>
+          <span class="chapter-head__rule"></span>
+        </div>
+        <div class="prose" style="margin-bottom: 3rem;">
+          <p>
+            A utilização de soluções de autenticação multifator ou autenticação contínua, comunicações seguras de voz,
+            vídeo e texto, e sistemas de comunicação de emergência seguros dentro da entidade.
+            O Konforme verifica a aplicação de MFA nas suas contas cloud e avalia a sua postura de
+            autenticação de forma holística.
+          </p>
+        </div>
+
+        <div class="rule-heavy"></div>
+
+        <!-- CTA -->
+        <div style="margin-top: 2rem; text-align: center;">
+          <p style="font-size: var(--text-lg); margin-bottom: 1rem;">
+            O Konforme mapeia cada avaliação e controlo a estes dez requisitos.
+          </p>
+          <a href="https://app.konforme.io/register" class="cta-link cta-link--lg">Iniciar a sua avaliação &rarr;</a>
+        </div>
+
+        <!-- Notas de rodapé -->
+        <div class="footnotes">
+          <ol>
+            <li>Article 21(2) da Diretiva (UE) 2022/2555 do Parlamento Europeu e do Conselho de 14 de dezembro de 2022.</li>
+            <li>As medidas acima listadas representam os requisitos mínimos. Os Estados-Membros podem impor medidas adicionais através da transposição nacional.</li>
+            <li>As entidades essenciais estão sujeitas a supervisão proativa; as entidades importantes estão sujeitas a supervisão reativa.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- COLOPHON -->
+  <footer class="colophon">
+    <div class="container">
+      <div class="colophon__grid">
+        <div class="colophon__about">
+          <span class="masthead__wordmark" style="font-size: 1.125rem;">Konforme</span>
+          <p style="font-size: var(--text-sm); color: var(--muted); margin-top: 0.75rem; line-height: 1.6;">
+            Automatização da conformidade NIS2 para empresas da UE.
+          </p>
+        </div>
+        <div>
+          <p class="colophon__heading">Produto</p>
+          <a href="/pt/article-21" class="colophon__link">Article 21</a>
+          <a href="/pt/pricing" class="colophon__link">Preços</a>
+          <a href="/pt/jurisdictions" class="colophon__link">Jurisdições</a>
+          <a href="/pt/security" class="colophon__link">Segurança</a>
+        </div>
+        <div>
+          <p class="colophon__heading">Empresa</p>
+          <a href="/privacy" class="colophon__link">Política de Privacidade</a>
+          <a href="mailto:konform@konforme.io" class="colophon__link">Contacto</a>
+        </div>
+        <div>
+          <p class="colophon__heading">App</p>
+          <a href="https://app.konforme.io/register" class="colophon__link">Começar</a>
+          <a href="https://app.konforme.io/login" class="colophon__link">Entrar</a>
+        </div>
+      </div>
+      <div class="colophon__langs">
+        <a href="/article-21" class="colophon__lang">EN</a>
+        <a href="/pt/article-21" class="colophon__lang is-active">PT</a>
+        <a href="/de/article-21" class="colophon__lang">DE</a>
+        <a href="/fr/article-21" class="colophon__lang">FR</a>
+        <a href="/es/article-21" class="colophon__lang">ES</a>
+        <a href="/it/article-21" class="colophon__lang">IT</a>
+        <a href="/nl/article-21" class="colophon__lang">NL</a>
+      </div>
+      <div class="colophon__bottom">
+        <span class="colophon__legal">&copy; 2026 KNF Technologies &middot; Sediada na UE &amp; Conforme com o RGPD</span>
+        <span class="colophon__legal">konform@konforme.io</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Consentimento de cookies">
+    <span class="cookie-banner__text">Utilizamos cookies para melhorar a sua experiência. Consulte a nossa <a href="/privacy" style="border-bottom: 1px solid rgba(255,255,255,0.3);">Política de Privacidade</a>.</span>
+    <div style="display: flex; gap: 1rem;">
+      <button class="cookie-banner__btn" id="cookie-accept">Aceitar</button>
+      <button class="cookie-banner__btn" id="cookie-decline">Recusar</button>
+    </div>
+  </div>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
