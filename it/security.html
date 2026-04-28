@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pratiche di sicurezza di Konforme — infrastruttura ospitata nell'UE, conformit&agrave; GDPR, crittografia, controlli di accesso e misure di protezione dei dati." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://konforme.io/it/security" />
+  <meta property="og:title" content="Sicurezza — Konforme" />
+  <meta property="og:description" content="Come proteggiamo i tuoi dati. Ospitato nell'UE, conforme al GDPR, crittografato a riposo e in transito." />
+  <meta property="og:url" content="https://konforme.io/it/security" />
+  <meta name="theme-color" content="#0B1F3A" />
+  <link rel="icon" type="image/svg+xml" href="../logo-icon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png" />
+  <title>Sicurezza — Konforme</title>
+  <link rel="preload" href="../fonts/Switzer-Variable.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+
+  <!-- MASTHEAD -->
+  <header class="masthead">
+    <div class="masthead__inner">
+      <a href="/it/" class="masthead__logo">
+        <div class="masthead__mark"><span>K<span class="masthead__mark-dot"></span></span></div>
+        <span class="masthead__wordmark">Konforme</span>
+      </a>
+      <nav class="masthead__nav">
+        <a href="/it/article-21" class="masthead__link">Article 21</a>
+        <a href="/it/pricing" class="masthead__link">Prezzi</a>
+        <a href="/it/jurisdictions" class="masthead__link">Giurisdizioni</a>
+        <a href="/it/security" class="masthead__link" style="color: var(--ink);">Sicurezza</a>
+        <div class="lang-switch" id="lang-switch">
+          <button class="lang-switch__toggle" aria-expanded="false" aria-haspopup="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10A15.3 15.3 0 0 1 12 2z"/></svg>
+            <span>IT</span>
+          </button>
+          <div class="lang-switch__dropdown" id="lang-dropdown">
+            <a href="/security" class="lang-switch__item" data-lang="en"><span class="lang-switch__item-name">English</span><span class="lang-switch__item-code">EN</span></a>
+            <a href="/pt/security" class="lang-switch__item" data-lang="pt"><span class="lang-switch__item-name">Portugu&ecirc;s</span><span class="lang-switch__item-code">PT</span></a>
+            <a href="/de/security" class="lang-switch__item" data-lang="de"><span class="lang-switch__item-name">Deutsch</span><span class="lang-switch__item-code">DE</span></a>
+            <a href="/fr/security" class="lang-switch__item" data-lang="fr"><span class="lang-switch__item-name">Fran&ccedil;ais</span><span class="lang-switch__item-code">FR</span></a>
+            <a href="/es/security" class="lang-switch__item" data-lang="es"><span class="lang-switch__item-name">Espa&ntilde;ol</span><span class="lang-switch__item-code">ES</span></a>
+            <a href="/it/security" class="lang-switch__item is-active" data-lang="it"><span class="lang-switch__item-name">Italiano</span><span class="lang-switch__item-code">IT</span></a>
+            <a href="/nl/security" class="lang-switch__item" data-lang="nl"><span class="lang-switch__item-name">Nederlands</span><span class="lang-switch__item-code">NL</span></a>
+          </div>
+        </div>
+        <a href="https://app.konforme.io/login" class="masthead__link">Accedi</a>
+        <a href="https://app.konforme.io/register" class="masthead__cta">Inizia gratis</a>
+      </nav>
+      <button class="masthead__hamburger" id="menu-toggle" aria-label="Apri menu" aria-expanded="false">
+        <svg viewBox="0 0 20 20" fill="none"><path d="M3 5h14M3 10h14M3 15h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-nav" id="mobile-nav" role="dialog" aria-label="Navigazione">
+    <button class="mobile-nav__close" id="mobile-nav-close" aria-label="Chiudi menu">
+      <svg viewBox="0 0 20 20" fill="none"><path d="M5 5l10 10M15 5L5 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+    </button>
+    <a href="/it/" class="mobile-nav__link">Home</a>
+    <a href="/it/article-21" class="mobile-nav__link">Article 21</a>
+    <a href="/it/pricing" class="mobile-nav__link">Prezzi</a>
+    <a href="/it/jurisdictions" class="mobile-nav__link">Giurisdizioni</a>
+    <a href="/it/security" class="mobile-nav__link">Sicurezza</a>
+    <a href="https://app.konforme.io/register" class="mobile-nav__link">Inizia gratis</a>
+  </div>
+
+  <main>
+    <!-- Title Block -->
+    <div class="container">
+      <div class="title-block">
+        <div class="title-block__meta">
+          <span>Konforme</span>
+          <span>Sicurezza</span>
+          <span>Ultimo aggiornamento aprile 2026</span>
+        </div>
+        <p class="title-block__eyebrow">Come proteggiamo i tuoi dati.</p>
+        <h1 class="title-block__title">Sicurezza in Konforme.</h1>
+      </div>
+    </div>
+
+    <!-- Lead -->
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div class="prose dropcap">
+          <p>
+            In quanto piattaforma di conformit&agrave;, ci atteniamo agli stessi standard che aiutiamo i nostri clienti
+            a raggiungere. Tutti i dati vengono elaborati e archiviati all&rsquo;interno dell&rsquo;<em>Unione Europea</em>.
+            Seguiamo i principi della privacy by design, crittografiamo tutti i dati a riposo e in transito e manteniamo
+            rigorosi controlli di accesso. Questa pagina descrive le nostre pratiche di sicurezza in dettaglio.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- i. Infrastruttura -->
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div class="chapter-head">
+          <span class="chapter-head__num">i.</span>
+          <span class="chapter-head__title">Infrastruttura e hosting.</span>
+          <span class="chapter-head__rule"></span>
+        </div>
+
+        <div class="security-grid">
+          <div class="security-item">
+            <div class="security-item__title">Hosting esclusivamente nell&rsquo;UE</div>
+            <div class="security-item__body">
+              Tutta l&rsquo;infrastruttura opera in AWS eu-west-1 (Irlanda). Nessun dato viene trasferito o
+              elaborato in giurisdizioni extra-UE. Il nostro database, i server applicativi e i servizi email
+              risiedono tutti all&rsquo;interno dell&rsquo;UE.
+            </div>
+          </div>
+          <div class="security-item">
+            <div class="security-item__title">Crittografia a riposo</div>
+            <div class="security-item__body">
+              Tutti i dati archiviati nel nostro database PostgreSQL sono crittografati a riposo con AES-256.
+              Le credenziali cloud fornite dagli utenti vengono ulteriormente crittografate prima dell&rsquo;archiviazione
+              tramite crittografia a livello applicativo.
+            </div>
+          </div>
+          <div class="security-item">
+            <div class="security-item__title">Crittografia in transito</div>
+            <div class="security-item__body">
+              Tutte le connessioni utilizzano TLS 1.2 o superiore. HSTS &egrave; applicato con un max-age di un anno
+              inclusi i sottodomini. Utilizziamo suite di cifratura moderne e aggiorniamo regolarmente la nostra
+              configurazione TLS.
+            </div>
+          </div>
+          <div class="security-item">
+            <div class="security-item__title">Sicurezza di rete</div>
+            <div class="security-item__body">
+              La nostra applicazione opera in un VPC privato con regole rigorose per i security group. Il database
+              non &egrave; accessibile pubblicamente. Tutto l&rsquo;accesso amministrativo richiede VPN e MFA.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ii. Sicurezza applicativa -->
+    <section class="section">
+      <div class="container">
+        <div class="chapter-head">
+          <span class="chapter-head__num">ii.</span>
+          <span class="chapter-head__title">Sicurezza applicativa.</span>
+          <span class="chapter-head__rule"></span>
+        </div>
+
+        <div class="security-grid">
+          <div class="security-item">
+            <div class="security-item__title">Autenticazione</div>
+            <div class="security-item__body">
+              Autenticazione basata su JWT con token crittograficamente sicuri (secrets.token_urlsafe).
+              Verifica email obbligatoria per tutti gli account. L&rsquo;hashing delle password utilizza bcrypt con
+              salt per utente.
+            </div>
+          </div>
+          <div class="security-item">
+            <div class="security-item__title">Limitazione delle richieste</div>
+            <div class="security-item__body">
+              Tutti gli endpoint di autenticazione hanno limiti di frequenza: login (5/min), registrazione (3/min),
+              verifica email (10/ora), reset password (5/ora). Gli endpoint API hanno limiti per utente per
+              prevenire abusi.
+            </div>
+          </div>
+          <div class="security-item">
+            <div class="security-item__title">Protezione CSRF</div>
+            <div class="security-item__body">
+              La protezione Cross-Site Request Forgery &egrave; attivata su tutti gli endpoint autenticati.
+              Utilizziamo il pattern double-submit cookie con attributi SameSite.
+            </div>
+          </div>
+          <div class="security-item">
+            <div class="security-item__title">Validazione degli input</div>
+            <div class="security-item__body">
+              Tutti gli input utente vengono validati e sanificati lato server utilizzando schemi Pydantic.
+              Ci proteggiamo da SQL injection, XSS e altre vulnerabilit&agrave; della OWASP Top 10.
+            </div>
+          </div>
+          <div class="security-item">
+            <div class="security-item__title">Header di sicurezza</div>
+            <div class="security-item__body">
+              Content Security Policy rigorosa, X-Frame-Options: DENY, X-Content-Type-Options: nosniff,
+              Referrer-Policy: strict-origin-when-cross-origin e header Permissions-Policy su tutte le risposte.
+            </div>
+          </div>
+          <div class="security-item">
+            <div class="security-item__title">Accesso cloud in sola lettura</div>
+            <div class="security-item__body">
+              Quando scansiona la tua infrastruttura AWS o Azure, Konforme utilizza credenziali in sola lettura.
+              Non modifichiamo mai le tue risorse cloud. Le credenziali sono crittografate a riposo e possono
+              essere revocate in qualsiasi momento.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- iii. Protezione dei dati -->
+    <section class="section">
+      <div class="container">
+        <div class="chapter-head">
+          <span class="chapter-head__num">iii.</span>
+          <span class="chapter-head__title">Protezione dei dati e GDPR.</span>
+          <span class="chapter-head__rule"></span>
+        </div>
+
+        <div class="prose" style="margin-bottom: 2rem;">
+          <p>
+            Konforme &egrave; progettato per essere conforme al GDPR fin dalla sua concezione. Raccogliamo solo i dati
+            necessari per fornire il nostro servizio. I dati degli utenti non vengono mai venduti a terze parti.
+            La cancellazione dell&rsquo;account rimuove permanentemente tutti i dati associati, inclusi risultati
+            delle scansioni, risposte alle valutazioni e credenziali.
+          </p>
+        </div>
+
+        <div class="rule-heavy"></div>
+        <table class="editorial-table" style="border-top: none;">
+          <thead>
+            <tr>
+              <th>Pratica</th>
+              <th>Dettaglio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Minimizzazione dei dati</strong></td>
+              <td style="color: var(--muted); font-size: var(--text-sm);">Raccogliamo solo ci&ograve; che &egrave; necessario per la valutazione di conformit&agrave;. Nessun pixel di tracciamento, nessuna analisi di terze parti.</td>
+            </tr>
+            <tr>
+              <td><strong>Diritto alla cancellazione</strong></td>
+              <td style="color: var(--muted); font-size: var(--text-sm);">La cancellazione dell&rsquo;account rimuove tutti i dati utente. Le credenziali cloud vengono eliminate immediatamente alla cancellazione temporanea dell&rsquo;account.</td>
+            </tr>
+            <tr>
+              <td><strong>Portabilit&agrave; dei dati</strong></td>
+              <td style="color: var(--muted); font-size: var(--text-sm);">Esporta i tuoi dati di conformit&agrave; come report PDF in qualsiasi momento. I dati delle valutazioni possono essere esportati su richiesta.</td>
+            </tr>
+            <tr>
+              <td><strong>Sub-responsabili</strong></td>
+              <td style="color: var(--muted); font-size: var(--text-sm);">AWS (hosting), Netlify (sito marketing), SES (email transazionali). Tutto elaborato nell&rsquo;UE.</td>
+            </tr>
+            <tr>
+              <td><strong>Notifica di violazione</strong></td>
+              <td style="color: var(--muted); font-size: var(--text-sm);">In caso di violazione dei dati, gli utenti interessati saranno notificati entro 72 ore secondo i requisiti del GDPR.</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="rule-heavy"></div>
+      </div>
+    </section>
+
+    <!-- iv. Divulgazione responsabile -->
+    <section class="section">
+      <div class="container">
+        <div class="chapter-head">
+          <span class="chapter-head__num">iv.</span>
+          <span class="chapter-head__title">Divulgazione responsabile.</span>
+          <span class="chapter-head__rule"></span>
+        </div>
+
+        <div class="prose">
+          <p>
+            Se scopri una vulnerabilit&agrave; di sicurezza in Konforme, ti preghiamo di segnalarla a
+            <a href="mailto:konform@konforme.io" style="border-bottom: 1.5px solid var(--cyan);">konform@konforme.io</a>.
+            Prendiamo sul serio tutte le segnalazioni e risponderemo entro 48 ore. Ti chiediamo di concederci
+            un tempo ragionevole per risolvere il problema prima di qualsiasi divulgazione pubblica.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- COLOPHON -->
+  <footer class="colophon">
+    <div class="container">
+      <div class="colophon__grid">
+        <div class="colophon__about">
+          <span class="masthead__wordmark" style="font-size: 1.125rem;">Konforme</span>
+          <p style="font-size: var(--text-sm); color: var(--muted); margin-top: 0.75rem; line-height: 1.6;">
+            Automazione della conformit&agrave; NIS2 per le aziende dell&rsquo;UE.
+          </p>
+        </div>
+        <div>
+          <p class="colophon__heading">Prodotto</p>
+          <a href="/it/article-21" class="colophon__link">Article 21</a>
+          <a href="/it/pricing" class="colophon__link">Prezzi</a>
+          <a href="/it/jurisdictions" class="colophon__link">Giurisdizioni</a>
+          <a href="/it/security" class="colophon__link">Sicurezza</a>
+        </div>
+        <div>
+          <p class="colophon__heading">Azienda</p>
+          <a href="/privacy" class="colophon__link">Informativa sulla Privacy</a>
+          <a href="mailto:konform@konforme.io" class="colophon__link">Contatto</a>
+        </div>
+        <div>
+          <p class="colophon__heading">App</p>
+          <a href="https://app.konforme.io/register" class="colophon__link">Inizia</a>
+          <a href="https://app.konforme.io/login" class="colophon__link">Accedi</a>
+        </div>
+      </div>
+      <div class="colophon__langs">
+        <a href="/security" class="colophon__lang">EN</a>
+        <a href="/pt/security" class="colophon__lang">PT</a>
+        <a href="/de/security" class="colophon__lang">DE</a>
+        <a href="/fr/security" class="colophon__lang">FR</a>
+        <a href="/es/security" class="colophon__lang">ES</a>
+        <a href="/it/security" class="colophon__lang is-active">IT</a>
+        <a href="/nl/security" class="colophon__lang">NL</a>
+      </div>
+      <div class="colophon__bottom">
+        <span class="colophon__legal">&copy; 2026 KNF Technologies &middot; Con sede nell&rsquo;UE &amp; Conforme al GDPR</span>
+        <span class="colophon__legal">konform@konforme.io</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Consenso cookie">
+    <span class="cookie-banner__text">Utilizziamo cookie per migliorare la tua esperienza. Consulta la nostra <a href="/privacy" style="border-bottom: 1px solid rgba(255,255,255,0.3);">Informativa sulla Privacy</a>.</span>
+    <div style="display: flex; gap: 1rem;">
+      <button class="cookie-banner__btn" id="cookie-accept">Accetta</button>
+      <button class="cookie-banner__btn" id="cookie-decline">Rifiuta</button>
+    </div>
+  </div>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

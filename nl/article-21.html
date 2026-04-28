@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NIS2 Article 21(2) — de tien maatregelen voor het beheer van cyberbeveiligingsrisico's. Gedetailleerde uitsplitsing van elke vereiste en hoe Konforme u helpt te voldoen." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://konforme.io/nl/article-21" />
+  <meta property="og:title" content="Article 21 — NIS2-nalevingsvereisten — Konforme" />
+  <meta property="og:description" content="De tien maatregelen voor het beheer van cyberbeveiligingsrisico's vereist door NIS2 Article 21(2), uitgelegd." />
+  <meta property="og:url" content="https://konforme.io/nl/article-21" />
+  <meta name="theme-color" content="#0B1F3A" />
+  <link rel="icon" type="image/svg+xml" href="../logo-icon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png" />
+  <title>Article 21 — NIS2-nalevingsvereisten — Konforme</title>
+  <link rel="preload" href="../fonts/Switzer-Variable.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+
+  <!-- MASTHEAD -->
+  <header class="masthead">
+    <div class="masthead__inner">
+      <a href="/nl/" class="masthead__logo">
+        <div class="masthead__mark"><span>K<span class="masthead__mark-dot"></span></span></div>
+        <span class="masthead__wordmark">Konforme</span>
+      </a>
+      <nav class="masthead__nav">
+        <a href="/nl/article-21" class="masthead__link" style="color: var(--ink);">Article 21</a>
+        <a href="/nl/pricing" class="masthead__link">Prijzen</a>
+        <a href="/nl/jurisdictions" class="masthead__link">Rechtsgebieden</a>
+        <a href="/nl/security" class="masthead__link">Beveiliging</a>
+        <div class="lang-switch" id="lang-switch">
+          <button class="lang-switch__toggle" aria-expanded="false" aria-haspopup="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10A15.3 15.3 0 0 1 12 2z"/></svg>
+            <span>NL</span>
+          </button>
+          <div class="lang-switch__dropdown" id="lang-dropdown">
+            <a href="/article-21" class="lang-switch__item" data-lang="en"><span class="lang-switch__item-name">English</span><span class="lang-switch__item-code">EN</span></a>
+            <a href="/pt/article-21" class="lang-switch__item" data-lang="pt"><span class="lang-switch__item-name">Portugu&ecirc;s</span><span class="lang-switch__item-code">PT</span></a>
+            <a href="/de/article-21" class="lang-switch__item" data-lang="de"><span class="lang-switch__item-name">Deutsch</span><span class="lang-switch__item-code">DE</span></a>
+            <a href="/fr/article-21" class="lang-switch__item" data-lang="fr"><span class="lang-switch__item-name">Fran&ccedil;ais</span><span class="lang-switch__item-code">FR</span></a>
+            <a href="/es/article-21" class="lang-switch__item" data-lang="es"><span class="lang-switch__item-name">Espa&ntilde;ol</span><span class="lang-switch__item-code">ES</span></a>
+            <a href="/it/article-21" class="lang-switch__item" data-lang="it"><span class="lang-switch__item-name">Italiano</span><span class="lang-switch__item-code">IT</span></a>
+            <a href="/nl/article-21" class="lang-switch__item is-active" data-lang="nl"><span class="lang-switch__item-name">Nederlands</span><span class="lang-switch__item-code">NL</span></a>
+          </div>
+        </div>
+        <a href="https://app.konforme.io/login" class="masthead__link">Inloggen</a>
+        <a href="https://app.konforme.io/register" class="masthead__cta">Gratis starten</a>
+      </nav>
+      <button class="masthead__hamburger" id="menu-toggle" aria-label="Menu openen" aria-expanded="false">
+        <svg viewBox="0 0 20 20" fill="none"><path d="M3 5h14M3 10h14M3 15h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-nav" id="mobile-nav" role="dialog" aria-label="Navigatie">
+    <button class="mobile-nav__close" id="mobile-nav-close" aria-label="Menu sluiten">
+      <svg viewBox="0 0 20 20" fill="none"><path d="M5 5l10 10M15 5L5 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+    </button>
+    <a href="/nl/" class="mobile-nav__link">Home</a>
+    <a href="/nl/article-21" class="mobile-nav__link">Article 21</a>
+    <a href="/nl/pricing" class="mobile-nav__link">Prijzen</a>
+    <a href="/nl/jurisdictions" class="mobile-nav__link">Rechtsgebieden</a>
+    <a href="/nl/security" class="mobile-nav__link">Beveiliging</a>
+    <a href="https://app.konforme.io/register" class="mobile-nav__link">Gratis starten</a>
+  </div>
+
+  <main>
+    <!-- Title Block -->
+    <div class="container">
+      <div class="title-block">
+        <div class="title-block__meta">
+          <span>NIS2-richtlijn</span>
+          <span>Article 21(2)</span>
+          <span>Richtlijn 2022/2555</span>
+        </div>
+        <p class="title-block__eyebrow">De tien maatregelen voor het beheer van cyberbeveiligingsrisico&rsquo;s.</p>
+        <h1 class="title-block__title">Article 21(2).</h1>
+      </div>
+    </div>
+
+    <!-- Inleiding -->
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div class="prose dropcap">
+          <p>
+            Article 21 van de <em>NIS2-richtlijn</em> vereist dat lidstaten ervoor zorgen dat essenti&euml;le en belangrijke
+            entiteiten passende en evenredige technische, operationele en organisatorische maatregelen nemen om de risico&rsquo;s
+            voor de beveiliging van netwerk- en informatiesystemen te beheersen. Deze maatregelen moeten gebaseerd zijn op een
+            alle-gevaren-benadering en omvatten ten minste de volgende tien gebieden.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- De tien maatregelen -->
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+
+        <!-- (a) -->
+        <div class="chapter-head" id="a">
+          <span class="chapter-head__num">(a)</span>
+          <span class="chapter-head__title">Risicoanalyse &amp; informatiebeveiligingsbeleid.</span>
+          <span class="chapter-head__rule"></span>
+        </div>
+        <div class="prose" style="margin-bottom: 3rem;">
+          <p>
+            Organisaties moeten beleid voor risicoanalyse en informatiesysteembeveiliging opstellen en onderhouden.
+            Dit omvat het defini&euml;ren van een governancekader, het uitvoeren van regelmatige risicobeoordelingen,
+            het bijhouden van een risicoregister en het vaststellen van herzieningscycli voor beveiligingsbeleid.
+            De beoordeling van Konforme dekt beleidsvolwassenheid, volledigheid van het risicoregister en governancestructuur.
+          </p>
+        </div>
+
+        <!-- (b) -->
+        <div class="chapter-head" id="b">
+          <span class="chapter-head__num">(b)</span>
+          <span class="chapter-head__title">Incidentafhandeling.</span>
+          <span class="chapter-head__rule"></span>
+        </div>
+        <div class="prose" style="margin-bottom: 3rem;">
+          <p>
+            Procedures voor het voorkomen, detecteren en reageren op incidenten, inclusief escalatiepaden en
+            meldingsverplichtingen. NIS2 introduceert strikte tijdlijnen voor incidentrapportage &mdash; een
+            vroegtijdige waarschuwing binnen 24 uur, een incidentmelding binnen 72 uur en een eindrapport binnen
+            &eacute;&eacute;n maand. Konforme volgt uw volwassenheid op het gebied van incidentafhandeling en
+            de gereedheid van uw responsplan.
+          </p>
+        </div>
+
+        <!-- (c) -->
+        <div class="chapter-head" id="c">
+          <span class="chapter-head__num">(c)</span>
+          <span class="chapter-head__title">Bedrijfscontinu&iuml;teit &amp; crisisbeheer.</span>
+          <span class="chapter-head__rule"></span>
+        </div>
+        <div class="prose" style="margin-bottom: 3rem;">
+          <p>
+            Bedrijfscontinu&iuml;teitsbeheer, inclusief back-upbeheer, noodherstel en crisisbeheer. Organisaties
+            moeten ervoor zorgen dat ze essenti&euml;le functies kunnen handhaven tijdens en na een incident.
+            Konforme scant uw cloudback-upconfiguraties en beoordeelt de volwassenheid van uw BCP/DRP-documentatie.
+          </p>
+        </div>
+
+        <!-- (d) -->
+        <div class="chapter-head" id="d">
+          <span class="chapter-head__num">(d)</span>
+          <span class="chapter-head__title">Toeleveringsketenbeveiliging.</span>
+          <span class="chapter-head__rule"></span>
+        </div>
+        <div class="prose" style="margin-bottom: 3rem;">
+          <p>
+            Beveiligingsaspecten met betrekking tot de relaties tussen elke entiteit en haar directe leveranciers
+            of dienstverleners. Dit omvat het beoordelen van leveranciersrisico&rsquo;s, contractuele
+            beveiligingsvereisten en het monitoren van de toeleveringsketen op kwetsbaarheden. Konforme evalueert
+            uw processen voor leveranciersrisicobeheer en controles van derden.
+          </p>
+        </div>
+
+        <!-- (e) -->
+        <div class="chapter-head" id="e">
+          <span class="chapter-head__num">(e)</span>
+          <span class="chapter-head__title">Beveiliging van netwerk- &amp; informatiesystemen.</span>
+          <span class="chapter-head__rule"></span>
+        </div>
+        <div class="prose" style="margin-bottom: 3rem;">
+          <p>
+            Beveiliging bij de acquisitie, ontwikkeling en het onderhoud van netwerk- en informatiesystemen,
+            inclusief afhandeling en openbaarmaking van kwetsbaarheden. De technische scanner van Konforme
+            controleert uw AWS- en Azure-configuraties tegen NIS2-gekoppelde controles voor netwerksegmentatie,
+            firewallregels, VPC-beveiliging en kwetsbaarheidsbeheer.
+          </p>
+        </div>
+
+        <!-- (f) -->
+        <div class="chapter-head" id="f">
+          <span class="chapter-head__num">(f)</span>
+          <span class="chapter-head__title">Effectiviteitsbeoordeling.</span>
+          <span class="chapter-head__rule"></span>
+        </div>
+        <div class="prose" style="margin-bottom: 3rem;">
+          <p>
+            Beleid en procedures om de effectiviteit van maatregelen voor het beheer van cyberbeveiligingsrisico&rsquo;s
+            te beoordelen. Organisaties moeten regelmatig hun beveiligingshouding testen en evalueren. Konforme biedt
+            continue scoring die precies laat zien waar uw nalevingshiaten zitten en hoe ze in de loop van de tijd
+            evolueren.
+          </p>
+        </div>
+
+        <!-- (g) -->
+        <div class="chapter-head" id="g">
+          <span class="chapter-head__num">(g)</span>
+          <span class="chapter-head__title">Cyberhygi&euml;ne &amp; training.</span>
+          <span class="chapter-head__rule"></span>
+        </div>
+        <div class="prose" style="margin-bottom: 3rem;">
+          <p>
+            Basispraktijken voor cyberhygi&euml;ne en cyberbeveiligingstraining voor personeel. NIS2 vereist
+            uitdrukkelijk dat ook bestuursorganen een opleiding volgen. Met de trainingscampagnes voor medewerkers
+            van Konforme kunt u beleidsbevestigingen en beveiligingsquizzen toewijzen, voltooiing bijhouden en
+            een audittrail opbouwen.
+          </p>
+        </div>
+
+        <!-- (h) -->
+        <div class="chapter-head" id="h">
+          <span class="chapter-head__num">(h)</span>
+          <span class="chapter-head__title">Cryptografie &amp; versleuteling.</span>
+          <span class="chapter-head__rule"></span>
+        </div>
+        <div class="prose" style="margin-bottom: 3rem;">
+          <p>
+            Beleid en procedures met betrekking tot het gebruik van cryptografie en, waar passend, versleuteling.
+            De technische scanner van Konforme controleert configuraties voor versleuteling in rust en tijdens
+            transport in uw cloudinfrastructuur &mdash; S3-buckets, RDS-instances, EBS-volumes, Azure Storage
+            en meer.
+          </p>
+        </div>
+
+        <!-- (i) -->
+        <div class="chapter-head" id="i">
+          <span class="chapter-head__num">(i)</span>
+          <span class="chapter-head__title">HR-beveiliging &amp; toegangscontrole.</span>
+          <span class="chapter-head__rule"></span>
+        </div>
+        <div class="prose" style="margin-bottom: 3rem;">
+          <p>
+            Beveiliging van personeel, toegangscontrolebeleid en vermogensbeheer. Dit dekt de volledige
+            levenscyclus van medewerkers, van onboarding tot offboarding, rolgebaseerde toegangscontrole en
+            het principe van minimale rechten. Konforme controleert IAM-configuraties, wachtwoordbeleid en
+            beoordeelt uw HR-beveiligingsprocessen.
+          </p>
+        </div>
+
+        <!-- (j) -->
+        <div class="chapter-head" id="j">
+          <span class="chapter-head__num">(j)</span>
+          <span class="chapter-head__title">Multi-factorauthenticatie.</span>
+          <span class="chapter-head__rule"></span>
+        </div>
+        <div class="prose" style="margin-bottom: 3rem;">
+          <p>
+            Het gebruik van multi-factorauthenticatie of continue authenticatieoplossingen, beveiligde spraak-,
+            video- en tekstcommunicatie, en beveiligde noodcommunicatiesystemen binnen de entiteit.
+            Konforme controleert de handhaving van MFA in uw cloudaccounts en beoordeelt uw authenticatiehouding
+            op holistische wijze.
+          </p>
+        </div>
+
+        <div class="rule-heavy"></div>
+
+        <!-- CTA -->
+        <div style="margin-top: 2rem; text-align: center;">
+          <p style="font-size: var(--text-lg); margin-bottom: 1rem;">
+            Konforme koppelt elke beoordeling en maatregel aan deze tien vereisten.
+          </p>
+          <a href="https://app.konforme.io/register" class="cta-link cta-link--lg">Start uw beoordeling &rarr;</a>
+        </div>
+
+        <!-- Voetnoten -->
+        <div class="footnotes">
+          <ol>
+            <li>Article 21(2) van Richtlijn (EU) 2022/2555 van het Europees Parlement en de Raad van 14 december 2022.</li>
+            <li>De hierboven vermelde maatregelen vertegenwoordigen de minimumvereisten. Lidstaten kunnen aanvullende maatregelen opleggen via nationale omzetting.</li>
+            <li>Essenti&euml;le entiteiten zijn onderworpen aan proactief toezicht; belangrijke entiteiten zijn onderworpen aan reactief toezicht.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- COLOPHON -->
+  <footer class="colophon">
+    <div class="container">
+      <div class="colophon__grid">
+        <div class="colophon__about">
+          <span class="masthead__wordmark" style="font-size: 1.125rem;">Konforme</span>
+          <p style="font-size: var(--text-sm); color: var(--muted); margin-top: 0.75rem; line-height: 1.6;">
+            NIS2-nalevingsautomatisering voor EU-bedrijven.
+          </p>
+        </div>
+        <div>
+          <p class="colophon__heading">Product</p>
+          <a href="/nl/article-21" class="colophon__link">Article 21</a>
+          <a href="/nl/pricing" class="colophon__link">Prijzen</a>
+          <a href="/nl/jurisdictions" class="colophon__link">Rechtsgebieden</a>
+          <a href="/nl/security" class="colophon__link">Beveiliging</a>
+        </div>
+        <div>
+          <p class="colophon__heading">Bedrijf</p>
+          <a href="/privacy" class="colophon__link">Privacybeleid</a>
+          <a href="mailto:konform@konforme.io" class="colophon__link">Contact</a>
+        </div>
+        <div>
+          <p class="colophon__heading">App</p>
+          <a href="https://app.konforme.io/register" class="colophon__link">Aan de slag</a>
+          <a href="https://app.konforme.io/login" class="colophon__link">Inloggen</a>
+        </div>
+      </div>
+      <div class="colophon__langs">
+        <a href="/article-21" class="colophon__lang">EN</a>
+        <a href="/pt/article-21" class="colophon__lang">PT</a>
+        <a href="/de/article-21" class="colophon__lang">DE</a>
+        <a href="/fr/article-21" class="colophon__lang">FR</a>
+        <a href="/es/article-21" class="colophon__lang">ES</a>
+        <a href="/it/article-21" class="colophon__lang">IT</a>
+        <a href="/nl/article-21" class="colophon__lang is-active">NL</a>
+      </div>
+      <div class="colophon__bottom">
+        <span class="colophon__legal">&copy; 2026 KNF Technologies &middot; Gevestigd in de EU &amp; AVG-conform</span>
+        <span class="colophon__legal">konform@konforme.io</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookietoestemming">
+    <span class="cookie-banner__text">Wij gebruiken cookies om uw ervaring te verbeteren. Zie ons <a href="/privacy" style="border-bottom: 1px solid rgba(255,255,255,0.3);">Privacybeleid</a>.</span>
+    <div style="display: flex; gap: 1rem;">
+      <button class="cookie-banner__btn" id="cookie-accept">Accepteren</button>
+      <button class="cookie-banner__btn" id="cookie-decline">Weigeren</button>
+    </div>
+  </div>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
